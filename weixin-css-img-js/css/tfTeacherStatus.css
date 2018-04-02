@@ -1,0 +1,332 @@
+        * {
+            box-sizing: border-box;
+        }
+
+        *:before, *:after {
+            box-sizing: border-box;
+        }
+
+        *, *:before, *:after {
+            -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+        }
+
+        html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, address, cite, code, del, dfn, em, img, ins, kbd, q, samp, small, strong, sub, sup, var, b, i, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td {
+            border: 0 none;
+            font-size: inherit;
+            color: inherit;
+            margin: 0;
+            padding: 0;
+            vertical-align: baseline;
+
+            /* 在X5新内核Blink中，在排版页面的时候，会主动对字体进行放大，会检测页面中的主字体，当某一块字体在我们的判定规则中，认为字号较小，并且是页面中的主要字体，就会采取主动放大的操作。然而这不是我们想要的，可以采取给最大高度解决 */
+            max-height: 100000px;
+        }
+
+        h1, h2, h3, h4, h5, h6 {
+            font-weight: normal;
+        }
+
+        em, strong {
+            font-style: normal;
+        }
+
+        ul, ol, li {
+            list-style: none;
+        }
+        body,html{
+            min-width: 320px;
+            max-width:750px;
+            height: 100%;
+            margin:0 auto;
+			position:relative;
+        }
+        body{
+            background: #f3f3f3;
+        }
+        .clearfix:after{
+            display: block;
+            width: 0;
+            height:0;
+            content: "";
+            clear: both;
+        }
+        .page__status{
+       width:100%;
+        height:100%;
+        position:absolute;
+    	left: 0;
+    	top: 0;
+    	background:#f3f3f3;
+        }
+ /*        header{
+        	width:100%;
+           min-width: 320px;
+            max-width:750px;
+            background: #ffffff;
+            box-shadow: 1px 1px 9px rgba(4,0,0,0.2);
+            -webkit-box-shadow: 1px 1px 9px rgba(4,0,0,0.2);
+            -moz-box-shadow: 1px 1px 9px rgba(4,0,0,0.2);
+            -ms-box-shadow: 1px 1px 9px rgba(4,0,0,0.2);
+            -o-box-shadow: 1px 1px 9px rgba(4,0,0,0.2);
+			position:absolute;
+			left:0;
+			top:0;
+            z-index: 100;
+        }
+        .header--title{
+            width: 81%;
+            text-align: center;
+            line-height: 45px;
+            font-size: 18px;
+            float: left;
+        }
+        .back__btn,.logout__btn{
+            border: none;
+            outline: none;
+            padding:0;
+            display: block;
+            width: 9.5%;
+            line-height: 45px;
+            float: left;
+            background: none;
+        }
+        .back__btn img,.logout__btn img{
+            vertical-align: middle;
+        }
+        .back__btn img{
+            width: 8px;
+            height: 13px;
+        }
+        .logout__btn img{
+            width: 15px;
+            height: 17px;
+        } */
+        container{
+            width: 100%;
+            position: absolute;
+            left: 0;
+            top:45px;
+             margin-bottom:20px;
+        }
+        .btn{
+            border: none;
+            outline: none;
+            padding:0;
+            background: none;
+            border-radius: 5px;
+            font-size: 15px;
+            display: block;
+           
+        }
+        .btn--status{
+            background: #f74a3c;
+            width: 165px;
+            height: 30px;
+            color: #ffffff;
+            margin: 0 auto;
+            letter-spacing: 4px;
+
+        }
+        .status__box{
+            width: 100%;
+            height: 345px;
+            background: #fff;
+            display: none;
+            padding: 30px 0 0;
+
+        }
+        .status__box:nth-of-type(1){
+            display: block;
+        }
+        .status__box>img{
+            display: block;
+            width: 122px;
+            height: 117px;
+            margin: 0 auto;
+        }
+        .status__box>p{
+            color: #bbb;
+            width: 66.6%;
+            text-align: center;
+            margin: 10px auto 15px;
+            font-size: 15px;
+        }
+        .toggleUser__box{
+            background: #ffffff;
+            height: 40px;
+        }
+        footer{
+            width: 100%;
+            position: absolute;
+            left: 0;
+            top:400px;
+            font-size: 15px;
+            margin-top:10px;
+        }
+        .toggleUser__box{
+            padding:0 24px;
+        }
+        footer .toggleUser__box>span{
+            line-height: 40px;
+            padding-left: 29px;
+            background: url("../images/toggleUser.png") no-repeat left 0 top 0;
+            background-size: 20px 20px;
+        }
+        footer .toggleUser__box>span img{
+            vertical-align: middle;
+            width: 8px;
+            height: 13px;
+        }
+        .toggleUser--ds{
+            color: #f7493e;
+            background: none !important;
+            padding:0 !important;
+            font-size: 13px
+        }
+        .toggleUser--toggle{
+            color: #333;
+            font-size: 15px;
+        }
+        .toggleUser--next{
+            padding-left: 15px !important;
+        }
+
+        /* 弹窗 */
+        .common_mask{
+            width:100%;
+            height:1000%;
+            background:rgba(0,0,0,0.4);
+            position:fixed;
+            top:0;
+            left:0;
+            display:none;
+            z-index:100;
+        }
+        .alertDS{
+            width:90%;
+            max-width:700px;
+            min-height:180px;
+            border:1px solid #999;
+            border-radius:5px;
+            background:#fff;
+            position:fixed;
+            top:50%;
+            left:50%;
+            transform:translate(-50%,-50%);
+            -webkit-transform:translate(-50%,-50%);
+            -moz-transform:translate(-50%,-50%);
+            -ms-transform:translate(-50%,-50%);
+            -o-transform:translate(-50%,-50%);
+            text-align:center;
+            color:#f74a3d;
+            padding:10px 10px 10px;
+            box-shadow:0 0 10px #999;
+            -webkit-box-shadow:0 0 10px #999;
+            -moz-box-shadow:0 0 10px #999;
+            -ms-box-shadow:0 0 10px #999;
+            -o-box-shadow:0 0 10px #999;
+            box-sizing: border-box;
+            display:none;
+            z-index:9999;
+        }
+        .alertDS span{
+            display: block;
+            color:#999;
+            font-size:16px;
+            width: 260px;
+            margin: 0 auto;
+            line-height:20px;
+            padding-top: 41px;
+        }
+        .btn__box{
+            padding-top: 31px;
+        }
+        .btn--warning{
+            background: #f74a3d;
+            width: 100px;
+            height:30px;
+            color: #fff;
+           
+        }
+        .btn--active{
+            background: #fff;
+            border: 1px solid #999999;
+            height: 30px;
+            width:100px;
+            color: #999;
+           
+        }
+        .btn__box  .fl{
+        	margin-left:10%;
+        }
+        .btn__box  .fr{
+        	margin-right:10%;
+        }
+        .alert__exit{
+	min-height:130px !important;
+}
+.alert__exit span{
+	padding-top:15px;
+}
+
+
+/* 固定条 */
+.fixed_bar{
+	/* height: 45px; */
+	background: url(../../../../file/h5/weixin/images/fixed_bg.png) 0 0 no-repeat;
+	background-size: 100% 45px;
+	box-shadow: 0px -1px 10px #ddd;
+	position: fixed;
+    bottom: 0;
+    left: 50%;
+    width: 100%;
+    min-width: 320px;
+    max-width: 640px;
+    transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+}
+.fixed_logo{
+	width: 35px;
+	height: 35px;
+	background: url(../../../../file/h5/weixin/images/fixed_logo.png) 0 0 no-repeat;
+	background-size: 35px 35px;
+	float: left;
+	margin: 5px 8px;
+}
+.fixed_con{
+	padding-top: 3px;
+	float: left;
+}
+.fixed_con p{
+	font-size: 16px;
+	color: #333;
+}
+.fixed_con span{
+	font-size: 12px;
+	color: #666;
+}
+.load{
+	padding-right: 8px;
+	float: right;
+}
+.load a{
+	float:left;
+	width: 80px;
+	height: 26px;
+	line-height: 26px;
+	font-size: 12px;
+	border-radius: 13px;
+	background: #f74a3d;
+	color: #fff;
+	text-align: center;
+	margin-top:10px;
+}
+.load i{
+	display: inline-block;
+	width: 20px;
+	height: 35px;
+	background: url(../../../../file/h5/weixin/images/close.png) 5px 15px no-repeat;
+	background-size: 15px 15px;
+}

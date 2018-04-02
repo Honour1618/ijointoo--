@@ -1,0 +1,217 @@
+/* BP修改页面（扫描） */
+.registration .form-group{
+	margin-left:0px;
+	margin-right: 10%;
+}
+.red{
+	color:#ff0000;
+	cursor:pointer;
+}
+.myCrowdfunds{
+	background:#fff;
+}
+/* .container{
+	min-height:1407px;
+} */
+.right_content{
+   	padding-left: 120px;
+   	overflow:hidden;
+}
+.registration ul li.info{
+	line-height:36px;
+	/* position:relative; */
+}
+.registration ul li.info label{
+	font-weight:normal;
+}
+/* 项目基本信息 */
+.login-title{
+	color:#333;
+	font-size:16px;
+	border-bottom:1px solid #e3e3e3;
+	padding:20px 0 10px 0;
+}
+#colorChange{
+	color:#333;
+	padding:26px 0;
+}
+#colorChange label{
+	color:#999;
+	font-weight:normal;
+	margin-right:23px;
+}
+#colorChange .info{
+	margin:0;
+}
+#colorChange .info p{
+	line-height:22px;
+    padding:6px 60px 0px 173px;
+    text-align: justify;
+}
+/* BP修改信息 */
+#remark{
+	resize:none;
+    background: #f3f3f3;
+    height: auto;
+    min-width: 450px;
+    float:none;
+    width:90%;
+    border:none;
+    margin:0 36px;
+    padding:10px;
+}
+#tfup_icon,#tfup_icon1,#tfup_icon2{
+	margin-left:47px;
+	float:none;
+	padding:0 33px;
+	width:auto;
+	background:url("../../../../file/tf/tfbid/images/tfup_icon.png") left center no-repeat;
+	background-size:21px 21px;
+    display: block;
+  	text-align: left;
+}
+#tfup_icon1,#tfup_icon2{
+	background:url("../../../../file/tf/tfbid/images/business_icon.png") left center no-repeat;
+	background-size:15px 15px;
+}
+#sign{
+    padding:0 10px;
+    float:none;
+}
+#btnLogin{
+	background:#f74a3d;
+	padding-left:50px;
+	padding-right:50px;
+}
+#plantBook{
+	float:none;
+	margin:0 10px 0px 36px;
+    display: inline-block;
+}
+.business_plan{
+	text-align:center;
+	color:#666;
+	font-size:12px;
+}
+.business_plan b{
+	font-size:12px;
+	color:#f74a3d;
+	font-weight:normal;
+	cursor: pointer;
+}
+.login-submit{
+	text-align:center;
+	margin:60px 0 5px;
+}
+.registration ul li.info span{
+	margin:5px 36px;
+    /* position: absolute;
+    top: 15px;
+    right: 47px; */
+}
+/* BP修改历史 */
+table{
+	color:#333;
+    width: 100%;
+    margin:10px 0px 20px;
+    text-align: center;
+    border-collapse:collapse;
+}
+th{
+	font-weight:normal;
+	color:#999;
+	height:62px;
+	width:20%;
+}
+td{
+	height:10px;
+}
+.modify_con{
+	width:30%;
+	padding:26px;
+	text-align:justify;
+}
+.modify_con img{
+	width:100%;
+}
+.modify_BPhis{
+	border:none;
+    padding-top: 60px;
+}
+#business_plan{
+	margin-top:0px;
+}
+#business_plan label {
+    background: url("../../../../file/tf/tfbid/images/business_icon.png") left center no-repeat;
+    background-size: 15px 15px;
+    margin-top: 5px;
+}
+/* 图片展示说明 */
+.item img{
+	margin:10px 0 0 36px;
+}
+.show_item{
+	width:360px;
+}
+/* 商业计划书评审协议 */
+.business_plan_agreement{
+	color:#666;
+	font-size:12px;
+	background:#fff;
+	width:998px;
+	margin-left:352px;
+	display:none;
+	position:absolute;
+	top:146px;
+	left:51%;
+	padding:0 100px;
+	transform:translateX(-81%);
+	-webkit-transform:translateX(-81%);
+	-ms-transform:translateX(-81%);
+	-o-transform:translateX(-81%);
+}
+.business_plan_agreement h2{
+	text-align:center;
+	border-bottom:1px solid #e3e3e3;
+	color:#333;
+	font-size:16px;
+}
+.business_agree_content{
+	line-height:28px;
+	margin:10px 36px;
+}
+.close_plan{
+	position:fixed;
+	right:20%;
+	top:88px;
+	width:33px;
+	height:83px;
+	background: url('../../../../file/tf/tfbid/images/close_plan.png') 5px 15px no-repeat;
+  	background-size: 28px 67px;
+  	z-index:99;
+  	cursor:pointer;
+	display:none;
+}
+.close_light{
+	animation: upin 1s ease;
+	-webkit-animation: upin 1s ease;
+	-moz-animation: upin 1s ease;
+	-ms-animation: upin 1s ease;
+	-o-animation: upin 1s ease;
+}
+@keyframes upin{
+	0% {
+		top:95px
+	}
+	100% {
+		top:80px
+	}
+}
+@-webkit-keyframes upin{
+	0% {
+		top:100px
+	}
+	100% {
+		top:50px
+	}
+}

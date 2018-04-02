@@ -1,0 +1,281 @@
+body{
+	background: #f3f3f3;
+	color: #333;
+	max-width:640px;
+	min-width:320px;
+	margin:0 auto;
+	font-size:14px;
+}
+h2{
+	height: 40px;
+	line-height: 40px;
+	font-size:16px;
+}
+/* 顶部开始 */
+#top_wrap{
+	background: #fff;
+	margin-bottom: 10px;
+}
+.top{
+	width: 100%;
+	height: 38px;
+	line-height: 38px;
+	text-align: center;
+	font-size: 16px;
+	position:relative;
+}
+.top_left,.topLeft{
+	width: 36px;
+	height: 36px;
+	background: url(../../../../file/h5/weixin/images/back.png) 13px no-repeat;
+	background-size: 10px 16px;
+	position:absolute;
+	left:0px;
+	top:1px;
+}
+/* 顶部结束 */
+
+/* 小导航开始 */
+/* 小导航 */
+.smlNav{
+    height: 35px;
+    margin: 8px 0;
+    box-shadow: 0px 0px 4px #ccc;
+    -webkit-box-shadow: 0px 0px 4px #ccc;
+    -moz-box-shadow: 0px 0px 4px #ccc;
+    -o-box-shadow: 0px 0px 4px #ccc;
+    background: #f6f6f6;
+    border-top:1px solid #fff;
+    border-bottom:1px solid #fff;
+}
+.smlNav li{
+	float: left;
+	width: 33.3%;
+	font-size: 14px;
+	text-align: center;
+	line-height: 35px;
+	box-sizing:border-box;
+	/* background: url(../../../../file/h5/weixin/images/border_right.png) right center no-repeat; */
+}
+.smlNav li:last-child{
+	background-image: none;
+}
+.smlNav .change{
+	background: #fff url(../../../../file/h5/weixin/images/border_right.png) right center no-repeat;
+    border-left: 1px solid #eee;
+    box-shadow: 0px 0px 8px #ddd;
+    height: 35px;
+    background: #fff;
+}
+.choosed{
+	color:#f64a3d;
+}
+/* 小导航结束 */
+
+/* 
+.investWrap{
+	display: none;
+}
+.firmWrap{
+	display: none;
+} */
+
+
+/* 项目开始 */
+.stockItem strong,.relayItem strong{
+	margin: 0 0 8px 13px;
+	border-left: 2px solid #f64a3c;
+	color: #f64a3c;
+	font-size: 15px;
+	padding-left: 7px;
+}
+.stockCon{
+	margin-top: 5px;
+}
+.stockCon b{
+	color: #f64a3c;
+	font-weight: normal;
+}
+.stockCon li a{
+	display:block;
+	height: 50px;
+	background: #fff;
+	padding: 10px 12px;
+	margin-bottom: 5px;
+}
+.stockCon li img{
+	width: 49px;
+	height: 49px;
+	border-radius:26px;
+	float: left;
+}
+.stockCon li h2{
+	font-size: 15px;
+	margin-left: 65px;
+	line-height: 20px;
+	height:30px;
+	color:#333;
+	overflow: hidden;
+    text-overflow: ellipsis;
+    -moz-text-overflow: ellipsis;
+    -ms-text-overflow: ellipsis;
+    -o-text-overflow: ellipsis;
+    white-space: nowrap;
+}
+.stockCon li span{
+	float: right;
+	font-size: 12px;
+	color:#666;
+}
+.stockCon li p{
+	font-size: 12px;
+	color: #333;
+	margin-left: 16px;
+	display: inline-block;
+}
+.investWrap span{
+	color: #666;
+}
+
+/* 投后报告开始 */
+.invested li h2{
+	height: 50px;
+	line-height: 50px;
+	background: url(../../../../file/h5/weixin/images/invested_det.png) no-repeat right 20px;
+	background-size: 6px 10px;
+	color:#333;
+}
+.investNum{
+	font-size:12px;
+	line-height:20px;
+	padding-left:10px;
+}
+/* 红包奖励开始 */
+.user_asset{
+	display: block;
+	margin: 0 auto;
+	width: 166px;
+	height: 222px;
+	background: url(../../../../file/h5/weixin/images/user_asset.png) no-repeat 0 0;
+	background-size: 166px 222px;
+	text-align: center;
+	padding-top: 84px;
+}
+.user_asset p{
+	color: #f4e823;
+}
+/* 红包奖励没有时 *//* 项目未存在时 *//* 投后报告暂无时 */
+.myBonusNone,.myFinNone,.myActNone,.myRptNone,.myRptNo{
+	width: 100%;
+	height: 100%;
+	text-align:center;
+}
+.myBonusNone img,.myFinNone img,.myRptNone img,.myRptNo img,.myActNone img{
+	width: 82px;
+	height: 53px;
+	margin-top: 30%;
+	margin-bottom: 24px;
+}
+.loadMore{
+	font-size:12px;
+	color:#666;
+	position: fixed;
+    bottom: 55px;
+    left: 50%;
+    transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+}
+
+
+/* 项目结束 */
+
+/* 看项目 */
+.watchItem{
+	font-size: 12px;
+	color: #666;
+	text-align: center;
+	margin-bottom:55px;
+}
+.watchItem p{
+	margin: 12px auto;
+	line-height:18px;
+}
+.watchItem a{
+	color: #fff;
+	padding: 6px 28px;
+	background:#f64a3c;
+	border-radius: 20px;
+}
+.watchItem span{
+	font-size:14px;
+	color:#f64a3c;
+}
+
+/* 固定条 */
+.fixed_bar{
+	background: url(../../../../file/h5/weixin/images/fixed_bg.png) 0 0 no-repeat;
+	background-size: 100% 45px;
+	box-shadow: 0px 0px 4px #ddd;
+	position: fixed;
+    bottom: 0;
+    left: 50%;
+    width: 100%;
+    min-width: 320px;
+    max-width: 640px;
+    transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+}
+.fixed_logo{
+	width: 35px;
+	height: 35px;
+	background: url(../../../../file/h5/weixin/images/fixed_logo.png) 0 0 no-repeat;
+	background-size: 35px 35px;
+	float: left;
+	margin: 5px 8px;
+}
+.fixed_con{
+	padding: 3px 0;
+	float: left;
+}
+.fixed_con p{
+	font-size: 17px;
+	color: #333;
+}
+.fixed_con span{
+	font-size: 8px;
+	color: #666;
+}
+.load{
+	padding-right: 8px;
+	float: right;
+}
+.load a{
+	float: left;
+	width: 80px;
+	height: 26px;
+	line-height: 26px;
+	font-size: 12px;
+	border-radius: 13px;
+	background: #f74a3d;
+	color: #fff;
+	text-align: center;
+	margin-top: 10px;
+}
+.load i{
+	display: inline-block;
+	width: 20px;
+	height: 30px;
+	background: url(../../../../file/h5/weixin/images/close.png) 5px 15px no-repeat;
+	background-size: 15px 15px;
+}
+
+/* info_wrap */
+.info_wrap{
+	display: none;
+	margin-bottom: 55px;
+}

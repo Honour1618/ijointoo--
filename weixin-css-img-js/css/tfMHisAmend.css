@@ -1,0 +1,119 @@
+/* 
+ * 爱就投2.0-投资行家-历史修改
+ *
+ * * * */
+
+body{
+	min-width: 320px;
+	max-width: 640px;
+	margin: 0 auto;
+	background:#f3f3f3;
+}
+
+/* 导航 */
+.topNav{
+	text-align:center;
+	line-height:44px;
+	font-size:18px;
+	color:#333;
+	background:#fff;
+	margin-bottom:10px;
+}
+.fan{
+	display:block;
+	width: 30px;
+	height: 30px;
+	background: url(../../../../file/h5/weixin/images/prevHei.png) 0 0 no-repeat;
+	background-size: 10px 17px;
+	margin: 12px 12px 0;
+	position:absolute;
+}
+.mission_con{
+	padding:8px 12px;
+	overflow:hidden;
+	font-size:14px;
+	color:#333;
+	background:#fff;
+	margin-bottom:10px;
+}
+.mission_con li{
+	float:left;
+	line-height:30px;
+	width:100%;
+}
+.mission_con label{
+	display:inline-block;
+	text-align:left;
+	margin-right:24px;
+	color:#666;
+}
+.mission_con strong{
+	color:#333;
+	font-weight:normal;
+}
+.mission_con a{
+	display:inline-block;
+}
+.modifyBP,.modifyPic{
+	float:none;
+	position:relative;
+	min-height:38px;
+}
+.modifyBP label,.modifyPic label{
+	position:absolute;
+}
+.modifyBP a,.modifyPic img{
+	padding-left:100px;
+    padding-top: 8px;
+}
+.imgBP{
+	width:42px;
+}
+.modifyImg{
+	width:90px;
+}
+/* 遮罩弹出层 */
+.common_mask{
+	width:100%;
+	height:100%;
+	background:rgba(0,0,0,0.4);
+	position:fixed;
+	top:0;
+	left:0;
+	display:none;
+}
+/* 点击加载更多 */
+.more_btn{
+	width: 100%;
+	height: 30px;
+	text-align: center;
+	line-height: 30px;
+	padding: 10px 0;
+}
+.loadingPic{
+	width:156px;
+	height:95px;
+	background:url(../../../../file/h5/weixin/images/loading.jpg) no-repeat;
+	background-size:cover;
+	border-radius:5px;
+	position:fixed;
+	left:0;
+	right:0;
+	top:0;
+	bottom:0;
+	margin:auto;
+	z-index:99;
+	display:none;
+}
+
+
+
+
+
+
+
+
+
+
+
+

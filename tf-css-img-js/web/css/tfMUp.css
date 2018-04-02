@@ -1,0 +1,114 @@
+/*
+ *
+ * 提交任务
+ *
+ ******/
+ 
+ *{padding:0;margin:0;list-style:none;font-family:"Microsoft Yahei";text-decoration: none;}
+html , body{height:100%;position:relative;margin:0 auto;background:#f7f7f7;}
+.right_content {
+    padding: 10px 18px;
+    background: #fff;
+    margin-top: 169px;
+}
+.login-title {
+    padding: 10px 0;
+    color: #333;
+    font-size: 16px;
+    border-bottom: 1px dashed #e3e3e3;
+}
+.modify_con{
+	padding:20px 0;
+}
+/* BP修改信息 */
+#remark{
+	resize:none;
+    background: #f3f3f3;
+    height: auto;
+    min-width: 450px;
+    float:none;
+    width:90%;
+    border:none;
+    padding:10px;
+}
+#tfup_icon,#tfup_icon1,#tfup_icon2{
+	margin-left:12px;
+	padding:0 33px;
+	width:auto;
+	background:url("../../../../file/tf/tfbid/images/tfup_icon.png") left center no-repeat;
+	background-size:21px 21px;
+    display: block;
+  	text-align: left;
+  	line-height:35px;
+  	color:#666;
+}
+#tfup_icon1,#tfup_icon2{
+	margin:20px 0;
+	background:url("../../../../file/tf/tfbid/images/business_icon.png") left center no-repeat;
+	background-size:15px 15px;
+}
+#sign{
+    float:none;
+    color:#f74a3d;
+}
+#btnLogin{
+	color:#fff;
+	background:#f74a3d;
+	padding:16px 80px;
+	border:0;
+	border-radius:5px;
+	font-size:18px;
+}
+#plantBook{
+    display: inline-block;
+}
+.form-control{
+	border:1px solid #e3e3e3;
+	margin-right:28px;
+}
+.login-submit{
+	text-align:center;
+	margin:60px 0 5px;
+}
+/* 图片展示说明 */
+.item img{
+	margin:10px 0 0 36px;
+}
+.show_item{
+	width:640px;
+}
+.tip{
+    font-size: 12px;
+    line-height: 16px;
+    background: url("../../../../file/tf/web/images/icon-input.png") no-repeat left;
+    padding: 0 0 0 195px;
+    display: block;
+}
+.red {
+    color: #f74a3d;
+    cursor: pointer;
+}
+.up_mask_pic,.up_mask_bp{
+	width:175px;
+	height:35px;
+	line-height:35px;
+	background:#fabe2a;
+	color:#fff;
+	font-size:18px;
+	border-radius:5px;
+	text-align:center;
+	position: relative;
+    top: -26px;
+}
+#del_head_pic,.file-down{
+	padding-left:196px;
+}
+#userAvatar,#plantBook{
+	position: absolute;
+    opacity: 0;
+    z-index: 11;
+    width: 173px;
+}
+.showBP{
+	display:inline-block;
+}

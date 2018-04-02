@@ -1,0 +1,390 @@
+/* 
+ *爱就投2.0-投资行家项目列表、爱支持列表
+ *
+ */
+
+body{
+	min-width: 320px;
+	max-width: 640px;
+	margin: 0 auto;
+	background:#f3f3f3;
+}
+/* 导航 */
+.topNav{
+	text-align:center;
+	line-height:44px;
+	font-size:18px;
+	color:#333;
+	background:#fff;
+	width:100%;
+	max-width:640px;
+	margin:0 auto;
+	position:fixed;
+	top:0;
+	z-index:11;
+}
+.fan{
+	display:block;
+	width: 30px;
+	height: 30px;
+	background: url(../../../../file/h5/weixin/images/prevHei.png) 0 0 no-repeat;
+	background-size: 10px 17px;
+	margin: 12px 12px 0;
+	position:absolute;
+}
+.choose{
+	color:#666;
+	font-size:14px;
+    position: absolute;
+    right: 12px;
+    top: 0px;
+}
+
+/* 状态导航 */
+.support_status{
+	overflow:hidden;
+	background:#fff;
+	font-size:14px;
+	color:#666;
+	border-bottom:2px solid #f3f3f3;
+	position:absolute;
+	top:44px;
+	height:38px;
+	width:100%;
+	max-width:640px;
+	border-bottom:1px solid #f3f3f3;
+}
+.support_start,.support_ing,.support_all{
+	width:33%;
+	float:left;
+	height:38px;
+	padding:5px 0;
+	text-align:center;
+	box-sizing: border-box;
+	line-height: 27px;
+}
+.support_start a,.support_ing a,.support_all a{
+	display: inline-block;
+	width:100%;
+	text-align:center;
+	border-right:1px solid #ddd;
+}
+.support_all a{
+	border:0;
+}
+.supportCur{
+	color:#f74a3d;
+}
+
+/* 项目内容 */
+.bidding_con{
+	position:relative;
+	top:0px;
+	display:block;
+	color:#333;
+	background:#fff;
+	padding:15px 12px 0;
+    margin-bottom: 10px;
+}
+.business_man{
+	overflow:hidden;
+	margin-bottom:10px;
+}
+.business_man img{
+	float:left;
+	margin-right:10px;
+	width:35px;
+	height:35px;
+	border-radius:50%;
+}
+.business_man span{
+	float:left;
+	margin-right:10px;
+	line-height:26px;
+	font-size:14px;
+	margin-top:5px;
+}
+.business_man .crtTime{
+	font-size:12px;
+}
+.target_title{
+	font-size:18px;
+	color:#000;
+	line-height:28px;
+}
+.target_tag{
+	font-size:12px;
+	line-height:22px;
+	color:#999;
+}
+.target_info{
+	font-size:14px;
+	line-height:20px;
+    margin: 2px 0;
+	color:#666;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+}
+.bidding_tag{
+	display:inline-block;
+	font-size:12px;
+	color:#f74a3d;
+	border-radius:13px;
+	padding:5px 15px;
+	margin-right:6px;
+	border:1px solid #f74a3d;
+	margin-bottom:10px;
+}
+.bidding_tag_con{
+	margin-top: 10px;
+	text-align:center;
+}
+.bidding_score{
+	position:absolute;
+	top:0;
+	right:10px;
+	width:36px;
+	padding:12px 4px;
+	text-align:center;
+	color:#fff;
+	font-style: normal;
+	font-size:9px;
+	background:#ff99c8;
+}
+.bidding_follow{
+	border-top:1px dotted #999;
+	padding:10px 0;
+}
+.bidding_follow ul{
+	height:20px;
+}
+.bidding_follow li{
+	float:left;
+	width:33%;
+	font-size:14px;
+	color:#999;
+	text-align:center;
+	border-right:1px solid #d3d3d3;
+}
+.invest_follow li{
+	width:30%;
+}
+.bidding_follow li:last-child{
+	border:0;
+}
+.bidding_follow img{
+	width:15px;
+	height:15px;
+	position:relative;
+	top:3px;
+}
+.bidding_follow span{
+    font-size:12px;
+    line-height: 20px;
+}
+.bidding_follow b{
+	color:#f74a3d;
+	font-weight:normal;
+}
+/* .bidding_follow .targetMon{
+	width:31.5%;
+} */
+.bidding_follow .realMon{
+	width:38%;
+}
+.bidding_follow .agreeNum{
+	width:28%;
+}
+
+/* 筛选内容 */
+.classify{
+	font-size:16px;
+	overflow:hidden;
+    width: 100%;
+    height: 460px;
+    position: fixed;
+    top: 44px;
+    left: 50%;
+    z-index: 11;
+    display:none;
+    max-width:640px;
+    transform:translateX(-50%);
+    -webkit-transform:translateX(-50%);
+    -ms-transform:translateX(-50%);
+    -o-transform:translateX(-50%);
+}
+#share_mask{
+    width: 100%;
+    height: 100%;
+    background: url('../../../../file/tf/fintest/img/mask.png') repeat;
+    position: fixed;
+    bottom: 0;
+    left: 50%;
+    z-index: 10;
+    max-width: 640px;
+    transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+    display: none;
+}
+.classifyCon{
+	width:50%;
+	height:430px;
+	background:#f3f3f3;
+	text-align:center;
+    padding: 15px 0;
+    float:left;
+}
+.classifyCon p{
+	margin:20px 0;
+}
+.classifyCur{
+	color:#f74a3d;
+}
+.one,.two,.three{
+	float:left;
+	width:50%;
+	height:430px;
+	background:#fff;
+	text-align:center;
+	padding:15px 0;
+}
+.two,.three{
+	display:none;
+}
+.one li,.two li,.three li{
+	margin:20px 0;
+}
+.one li a:hover,.two li a:hover,.three li a:hover{
+	color:#f74a3d;
+}
+
+/* 投资行家列表 */
+.invest_list_con{
+	margin-top:10px;
+	display:block;
+}
+.invester{
+	margin-bottom:5px;
+}
+.invester_r{
+	height:60px;
+}
+.invester .mr8{
+	margin-right:8px;
+}
+.invester .user_mission{
+	width:60px;
+	height:60px;
+}
+.invester span{
+	float:none;
+	font-size:16px;
+	margin-right:0;
+	margin-top:13px;
+}
+.invester .level{
+	float:none;
+	width:20px;
+	height:18px;
+	border-radius:0;
+	margin-top:15px;
+}
+.invester_r p{
+	font-size:12px;
+	color:#999;
+}
+.invest_title,.invest_tag{
+	font-size:13px;
+	color:#666;
+	line-height:23px;
+}
+.invest_title span,.invest_tag span{
+	color:#333;
+}
+.invest_follow{
+	margin-top:10px;
+}
+
+/* 好评 */
+.bidding_follow .ping{
+	width:38%;
+}
+
+/* 遮罩弹出层 */
+.common_mask{
+	width:100%;
+	height:100%;
+	background:rgba(0,0,0,0.4);
+	position:fixed;
+	top:0;
+	left:0;
+	display:none;
+}
+/* 点击加载更多 */
+.more_btn{
+	width: 100%;
+	height: 30px;
+	text-align: center;
+	line-height: 30px;
+	padding: 10px 0;
+}
+.loadingPic{
+	width:156px;
+	height:95px;
+	background:url(../../../../file/h5/weixin/images/loading.jpg) no-repeat;
+	background-size:cover;
+	border-radius:5px;
+	position:fixed;
+	left:0;
+	right:0;
+	top:0;
+	bottom:0;
+	margin:auto;
+	z-index:99;
+	display:none;
+}
+.gray_bg{
+	background:#aaa;
+}
+.pink_bg{
+	background:#ff99c7;
+}
+.showPrjStatus{
+	margin-top:83px;
+}
+.mt54{
+	margin-top:54px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

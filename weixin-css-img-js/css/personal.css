@@ -1,0 +1,145 @@
+body{
+	min-width: 320px;
+	max-width: 640px;
+	margin: 0 auto;
+}
+/* user上部分 */
+.user{
+	background: url(../../../../file/h5/weixin/images/user_bg.jpg) 0 0 no-repeat;
+	background-size:100% 221px;
+	text-align: center;
+	padding-top: 10px;
+	color: #fff;
+}
+.fan{
+	display:block;
+	width: 30px;
+	height: 30px;
+	background: url(../../../../file/h5/weixin/images/prev.png) 0 0 no-repeat;
+	background-size: 10px 17px;
+	margin-left: 12px;
+}
+/* .userCon h2 i{
+	font-size: 14px;
+	padding-right: 20px;
+	background: url(../../../../file/h5/weixin/images/user_sign.jpg) 5px center no-repeat;
+	background-size: 14px 14px;
+} */
+.userCon p{
+	font-size: 12px;
+	line-height: 18px;
+}
+.userCon h2{
+	font-size:16px;
+	line-height:31px;
+}
+.userImg{
+	width: 60px;
+	height: 60px;
+	/* border-radius: 50%;
+	border: 1px solid #fff; */
+	margin: 0 auto;
+	border-radius:30px;
+	overflow:hidden;
+	border:1px solid #fff;
+}
+.userImg img{
+}
+.focus_item{
+	padding: 10px 0;
+	z-index: 1;
+	background: url(../../../../file/h5/weixin/images/focus_bg.png) 0 0 no-repeat;
+	background-size: 100% 75px;
+	overflow: hidden;
+	margin-top:5px;
+}
+.focus_item a{
+	color: #fff;
+}
+.focus_item li{
+	float: left;
+	width: 33.3%;
+	font-size: 12px;
+	background: url(../../../../file/h5/weixin/images/user_right.png) right center no-repeat;
+}
+.focus_item li:last-child{
+	background: none;
+}
+.focus_item li i{
+	font-size: 15px;
+}
+
+/* function开始 */
+.function{
+	padding: 0 16px;
+}
+.function a{
+	color: #333;
+	display:block;
+	height:40px;
+}
+.function li{
+	height: 40px;
+	line-height: 40px;
+	border-bottom: 1px solid #c2c2c2;
+	font-size: 14px;
+	color: #333;
+	padding: 0 5px;
+}
+.function li span{
+	float: left;
+	padding-left: 36px;
+}
+.function li i{
+	float: right;
+	color: #999;
+	font-size: 12px;
+	padding-right: 18px;
+	background: url(../../../../file/h5/weixin/images/xia.png) right center no-repeat;
+	background-size: 8px 12px;
+}
+.function li:nth-child(1){
+	background: url(../../../../file/h5/weixin/images/user_icon01.png) 5px center no-repeat;
+	background-size: 22px 22px;
+}
+.function li:nth-child(2){
+	background: url(../../../../file/h5/weixin/images/user_icon02.png) 5px center no-repeat;
+	background-size: 22px 22px;
+}
+.function li:nth-child(3){
+	background: url(../../../../file/h5/weixin/images/user_icon03.png) 5px center no-repeat;
+	background-size: 22px 22px;
+}
+.function li:nth-child(4){
+	background: url(../../../../file/h5/weixin/images/user_icon04.png) 5px center no-repeat;
+	background-size: 22px 22px;
+}
+.function li:nth-child(5){
+	background: url(../../../../file/h5/weixin/images/user_icon05.png) 5px center no-repeat;
+	background-size: 22px 22px;
+}
+.function li:nth-child(6){
+	background: url(../../../../file/h5/weixin/images/user_icon06.png) 5px center no-repeat;
+	background-size: 22px 22px;
+}
+strong{
+	color: #fd4828;
+}
+.extra_info{
+	position: fixed;
+	bottom: 0;
+	width: 100%;
+	text-align: center;
+	color: #fd4828;
+	font-size: 12px;
+	line-height: 20px;
+	background: #f3f3f3;
+	padding: 10px 0;
+	max-width:640px;
+}
+.angel_level{
+	text-align:center;
+}
+.angel_level img{
+	width:80px;
+}

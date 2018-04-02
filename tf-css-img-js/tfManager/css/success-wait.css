@@ -1,0 +1,71 @@
+        html,body{
+            min-width: 320px;
+            max-width: 640px;
+            margin: 0 auto;
+            height: 100%;
+        }
+        html{
+            position: relative;
+
+        }
+        .clearfix:after{
+            display: block;
+            width: 0;
+            height:0;
+            content: "";
+            clear: both;
+        }
+
+        body{
+            position: relative;
+            height: 100%;
+            box-sizing: border-box;
+            background: url("../images/teac-bottom-bg_09.png") no-repeat left 0 bottom 0;
+            background-size: 100% 100%;
+        }
+
+        .user-img-show .item{
+
+            padding: 5px;
+            overflow: hidden;
+
+        }
+        .user-img-show img{
+            width: 100%;
+            height: 100%;
+        }
+        .sub-apply{
+            width: 200px;
+            height: 53px;
+            display: block;
+
+            border: none;
+            background: url("../images/information-btn_03.png") no-repeat left 0 top 0;
+            background-size: 100% 100%;
+            /*margin: 27px auto 0;*/
+            position: absolute;
+            left: 50%;
+            margin-left: -100px;
+            top: 462px;
+            animation:helpAnimate 0.5s infinite;
+            -webkit-animation:helpAnimate 0.5s infinite;
+/*            position: absolute;
+            left: 50%;
+            margin-left: -100px;
+            bottom: 40px;*/
+        }
+        .success-box{
+            background: url("../images/success-bg.png") no-repeat left 50% top 0;
+           background-size: 100% 100%;
+           /* background-size: 768px 1333px;*/
+            height: 100%;
+            padding:0 25px;
+        }
+        .success-box img{
+            width: 332px;
+            position: absolute;
+            left: 50%;
+            top:6%;
+            margin-left: -166px;
+
+        }

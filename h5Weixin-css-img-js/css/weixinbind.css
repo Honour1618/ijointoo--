@@ -1,0 +1,212 @@
+/*
+ * 爱就投微信绑定
+ *
+ ***/
+ 
+ body {
+	background-color: #F9F9F9;
+	font-family: '微软雅黑'
+}
+
+input {
+	outline: medium;
+}
+
+input[type=checkbox],label {
+	vertical-align: middle;
+}
+
+#userinfo_area {
+	padding-top: 20px;
+	text-align: center;
+}
+
+.userInform {
+	background-color: #fff;
+	border-top: 1px solid #ccc;
+	padding-top: 5px;
+}
+
+.userInform input {
+	height: 30px;
+	width: 70%;
+	border: none;
+	font-size: 14px;
+	color: #1E1E24;
+	padding-left: 10px;
+}
+
+.userInform span {
+	width: 30%;
+	padding-left: 40px;
+	color: #656565;
+}
+
+.userInform1 {
+	background-color: #fff;
+	padding-bottom: 5px;
+	border-bottom: 1px solid #ccc;
+}
+
+.userInform1 input {
+	height: 30px;
+	width: 70%;
+	border: none;
+	font-size: 14px;
+	color: #1E1E24;
+	padding-left: 10px;
+}
+
+.userInform1 span {
+	width: 30%;
+	padding-left: 40px;
+	color: #656565;
+}
+
+#userinfo_area .nextStep {
+	width: 50%;
+	height: 35px;
+	border-radius: 17px;
+	border: 1px solid #e95549;
+	background-color: #fff;
+	margin-top: 30px;
+	color: #e95549;
+	font-size: 14px;
+}
+
+.userInform2 {
+	background-color: #fff;
+	padding: 6px 0;
+	border-bottom: 1px solid #eee;
+	border-top: 1px solid #eee;
+}
+
+.userInform2 input {
+	height: 30px;
+	width: 40%;
+	border: none;
+	font-size: 14px;
+	color: #1E1E24;
+	padding-left: 10px;
+}
+
+.userInform2 span {
+	width: 20%;
+	padding-left: 10px;
+	color: #656565;
+}
+
+.userInform2 input.yanZheng {
+	width: 110px;
+	text-align: left;
+	border: none;
+	border-left: 1px solid #c7c7cd;
+	background-color: white;
+	height: 30px;
+	font-size: 14px;
+	color: #077EDB;
+	float: right;
+	cursor: pointer;
+}
+
+.xian {
+	width: 80%;
+	border: 1px solid #eee;
+	margin: 0 auto;
+}
+
+.informationNew {
+	text-align: center;
+	width: 75%;
+	padding: 20px 10px 16px 10px;
+	margin: 0 auto;
+	color: #ff7200;
+	line-height: 25px;
+}
+
+#code_area {
+	text-align: center;
+}
+
+#code_area .confirm {
+	width: 50%;
+	height: 35px;
+	border-radius: 17px;
+	border: 1px solid #e95549;
+	background-color: #fff;
+	color: #e95549;
+	font-size: 14px;
+	margin-top: 40px;
+}
+
+.xieyi {
+	width: 100%;
+	margin: 0 auto;
+	padding: 15px;
+}
+
+#reg_area {
+	text-align: center;
+}
+
+#reg_area .confirm {
+	width: 50%;
+	height: 35px;
+	border-radius: 17px;
+	border: 1px solid #ccc;
+	background-color: #ccc;
+	color: #C3BFBF;
+	font-size: 14px;
+	margin-top: 32px;
+}
+
+#bindSucc_area {
+	text-align: center;
+	width: 100%;
+}
+
+#bindSucc_area img {
+	margin: 40px;
+	border-radius: 50%;
+	width: 80px;
+	height: 80px;
+}
+
+#bindSucc_area p {
+	font-size: 20px;
+	color: #333;
+	margin: 0 auto;
+	width: 100%;
+}
+
+#bindSucc_area input,#weixinTip .more {
+	width: 50%;
+	height: 35px;
+	border-radius: 17px;
+	border: 1px solid #e95549;
+	background-color: #fff;
+	color: #e95549;
+	font-size: 14px;
+	margin-top: 40px;
+}
+
+.err_msg {
+	color: #D20E0E;
+	width: 100%;
+	margin: auto;
+	font-size: 12px;
+	background-color: rgb(255, 233, 227);
+	text-align: left;
+	height: 25px;
+	padding-left: 10px;
+	line-height: 25px;
+	display: none;
+}
+
+.changeBox {
+	margin-top: 32px;
+}
+
+.changeBox input[type=checkbox] {
+	margin: 0 auto
+} 

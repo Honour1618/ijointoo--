@@ -1,0 +1,302 @@
+/*
+ *
+ *信息提交-基础信息
+ *
+ */
+
+.registration .form-group{
+	margin-left:0px;
+	margin-right: 10%;
+}
+.myCrowdfunds{
+	background:#fff;
+}
+.right_content{
+	padding-left:120px;
+	position:relative;
+}
+.rightOne{
+    position: absolute;
+    top: 0px;
+    left: -60px;
+	width:100px;
+    margin-top: 26px;
+}
+.example{
+	width:30px;
+	position: absolute;
+    top: 21px;
+    right: 0px;
+    z-index: 999;
+    color:#666;
+    font-size:15px;
+}
+.info_main{
+	position:fixed;
+	top:109px;
+	left:50%;
+	z-index:99999;
+	color:#f74a3d;
+	background:#fff;
+	border-radius:0 0 10px 10px;
+    width: 280px;
+    height: 53px;
+    line-height: 53px;
+    text-align: center;
+    margin-left:-140px;
+    font-size: 16px;
+    box-shadow: 0px 3px 3px rgba(9,4,2,0.12);
+    -webkit-box-shadow: 0px 3px 3px rgba(9,4,2,0.12);
+    -ms-box-shadow: 0px 3px 3px rgba(9,4,2,0.12);
+    -o-box-shadow: 0px 3px 3px rgba(9,4,2,0.12);
+}
+/* 基础信息部分开始 */
+.login-title{
+	padding:20px 0 10px 0;
+	color:#333;
+	font-size:16px;
+	border-bottom:1px solid #e3e3e3;
+}
+.login-title p{
+	color:#999;
+	line-height:22px;
+}
+.colorChange{
+	color:#333;
+	padding:26px 0;
+	overflow:hidden;
+}
+.colorChange label{
+	color:#999;
+	font-weight:normal;
+	margin-right:23px;
+}
+.colorChange .info{
+	margin:0;
+	line-height:36px;
+	float:left;
+}
+.registration ul li.info span{
+	margin:5px 36px;
+}
+#tfup_icon{
+	margin-left:47px;
+	float:none;
+	padding:0 33px;
+	width:auto;
+	background:url("../../../../file/tf/tfup/images/tfup_icon.png") left center no-repeat;
+	background-size:21px 21px;
+}
+#sign{
+	padding:0 10px;
+	float:none;
+}
+.registration ul li.info{
+	height:35px;
+	float:none;
+	position:relative;
+}
+.registration ul li.info label{
+	font-weight:normal;
+	width:80px;
+}
+.registration ul li.info input,.registration ul li.info textarea{
+	float:none;
+	padding:0px 20px;
+	background:#f3f3f3;
+	border-radius:0;
+	border:0;
+	width:63%;
+}
+.registration ul li.info textarea{
+	resize:none;
+}
+/* 附件上传 */
+#video_address label{
+	padding-right: 0;
+	margin-top: 5px;
+}
+#video_address input{
+    padding: 8px 20px;
+    width: 84%;
+    margin: 0 20px 0 33px;
+}
+#video_address img{
+	width:28px;
+    position: relative;
+    top: 8px;
+}
+#business_plan label{
+    background: url("../../../../file/tf/tfup/images/business_icon.png") left center no-repeat;
+  	background-size: 15px 15px;
+ 	margin-top: 5px;
+}
+.file-down{
+	font-size: 12px;
+	padding:0 33px;
+	color:#666;
+	position: relative;
+	top: -14px;
+}
+/* 项目标签 */
+#project_tag label,#info_help label{
+	width:100%;
+	text-align:left;
+	color: #333;
+  	font-size: 16px;
+  	padding-left:20px;
+  	font-weight:normal;
+  	margin-bottom:15px;
+  	padding:10px 0;
+}
+.compRangList{
+	text-align:justify;
+}
+.compRangList a{
+	color: #f16d6d;
+    border: 1px solid #f16d6d;
+    padding: 5px 20px;
+    margin: 5px;
+    -moz-border-radius: 20px;
+    -webkit-border-radius: 20px;
+    border-radius: 20px;
+    font-size: 12px;
+}
+/* 寻求帮助 */
+#btnLogin{
+	width:280px;
+	height:49px;
+	background:#f74a3d;
+}
+.login-submit{
+	text-align:center;
+	margin:65px 0;
+}
+.login-submit p{
+	color:#666;
+	font-size:12px;
+	margin-top:10px;
+}
+.login-submit b{
+	color:#f74a3d;
+	font-weight:normal;
+}
+/* 创业者融资项目商业计划书发布协议  */
+.entrepreneur_plan{
+	cursor:pointer;
+}
+.entrepreneur_business_plan{
+	color:#666;
+	font-size:12px;
+	background:#fff;
+	width:998px;
+	margin-left:352px;
+	display:none;
+	position:absolute;
+	top:140px;
+	left:51%;
+	padding:0 100px;
+	transform:translateX(-81%);
+	-webkit-transform:translateX(-81%);
+	-ms-transform:translateX(-81%);
+	-o-transform:translateX(-81%);
+	text-align:left;
+}
+.entrepreneur_business_plan h2{
+	text-align:center;
+	border-bottom:1px solid #e3e3e3;
+	color:#333;
+	font-size:16px;
+}
+.business_agree_content{
+	line-height:28px;
+	margin:10px 36px;
+}
+.close_plan{
+	position:fixed;
+	right:20%;
+	top:88px;
+	width:33px;
+	height:83px;
+	background: url('../../../../file/tf/tfup/images/close_plan.png') 5px 15px no-repeat;
+  		background-size: 28px 68px;
+  		z-index:99;
+  		cursor:pointer;
+  		display:none;
+}
+.close_light{
+	animation: upin 1s ease;
+	-webkit-animation: upin 1s ease;
+	-moz-animation: upin 1s ease;
+	-ms-animation: upin 1s ease;
+	-o-animation: upin 1s ease;
+}
+@keyframes upin{
+	0% {
+		top:95px
+	}
+	100% {
+		top:80px
+	}
+}
+@-webkit-keyframes upin{
+	0% {
+		top:100px
+	}
+	100% {
+		top:50px
+	}
+}
+/* 页面警告框 */
+.alertShow{
+	width:60%;
+	min-height:60px;
+	max-width:500px;
+	border:1px solid #999;
+	border-radius:5px;
+	background:#fff;
+	position:fixed;
+	top:30%;
+	left:50%;
+	transform:translateX(-50%);
+	-webkit-transform:translateX(-50%);
+	-moz-transform:translateX(-50%);
+	-ms-transform:translateX(-50%);
+	-o-transform:translateX(-50%);
+	text-align:center;
+	color:#f74a3d;
+	padding:40px 10px 10px;
+	box-shadow:0 0 10px #999;
+	-webkit-box-shadow:0 0 10px #999;
+	-moz-box-shadow:0 0 10px #999;
+	-ms-box-shadow:0 0 10px #999;
+	-o-box-shadow:0 0 10px #999;
+	z-index:99;
+	display:none;
+}
+.common_mask{
+	width:100%;
+	height:100%;
+	background:rgba(0,0,0,0.4);
+	position:fixed;
+	top:0;
+	left:0;
+	display:none;
+}
+.addr{
+	padding-top:20px;
+	height:33px;
+}
+.registration ul li.info .tvLink{
+	width:63%;
+}
+label img{
+	width:7px;
+	height:7px;
+	margin-right:5px;
+}
+.tv_help{
+	width: 20px;
+    position: relative;
+    top: 5px;
+}

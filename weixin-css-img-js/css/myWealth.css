@@ -1,0 +1,200 @@
+body{
+	background: #f2f2f2;
+	color: #333;
+	max-width:640px;
+	min-width:320px;
+	margin:0 auto;
+	font-size:14px;
+}
+h2{
+	height: 40px;
+	line-height: 40px;
+	font-size:16px;
+}
+.wealth_wrap{
+	height: 205px;
+	background: url(../../../../file/h5/weixin/images/current_wealth_bg.jpg) no-repeat 0 0;
+	background-size:100%  205px;
+}
+/* 顶部开始 */
+.top{
+	width: 100%;
+	height: 44px;
+	line-height: 44px;
+	text-align: center;
+	font-size: 16px;
+	color: #fff;
+	position:relative;
+}
+.top_left{
+	width: 36px;
+	height: 36px;
+	background: url(../../../../file/h5/weixin/images/prev.png) 13px no-repeat;
+	background-size: 10px 16px;
+	position:absolute;
+	left:0px;
+	top:1px;
+}
+/* 顶部结束 */
+
+/* 资产详情开始 */
+.asset{
+	height: 161px;
+	color: #fff;
+	text-align: center;
+	padding: 34px 0px 0px 12px;
+}
+.asset p{
+	font-size: 12px;
+	line-height: 20px;
+}
+.asset span{
+	font-size:26px;
+	line-height: 40px;
+}
+.asset_det{
+	height: 43px;
+	padding: 15px 16px 8px;
+	color: #fff;
+	background: url(../../../../file/h5/weixin/images/current_wealth_bottom.jpg) no-repeat 0 0;
+}
+.asset_det p{
+	width: 47%;
+	padding-left: 5px;
+	display: inline-block;
+	font-size: 12px;
+	text-align: center;
+}
+.asset_det span{
+	color: #feece4;
+}
+.asset_det p strong{
+	display: block;
+	font-size: 15px;
+	margin-top: 5px;
+}
+/* 资产详情结束 */
+
+/* 看项目 */
+.watchItem{
+	font-size: 12px;
+	color: #666;
+	text-align: center;
+	margin: 30px auto;
+}
+.watchItem p{
+	margin-bottom: 10px;
+	line-height: 18px;
+}
+.watchItem p:last-child{
+	margin: 50px auto;
+}
+.watchItem a{
+	color: #fff;
+	padding: 6px 28px;
+	background:#f64a3c;
+	border-radius: 20px;
+}
+.watchItem .loadApp{
+	background:none;
+	color:#f64a3c ;
+}
+/* 财富未充值时 */
+.myWealthNone{
+	width: 100%;
+	height: 100%;
+	text-align:center;
+}
+.myWealthNone img{
+	width: 82px;
+	height: 53px;
+	margin-top: 30%;
+	margin-bottom: 24px;
+}
+.myWealthNone .top{
+	color:#333;
+	background:#fff;
+}
+.myWealthNone .top_left{
+	background: url(../../../../file/h5/weixin/images/back.png) 13px no-repeat;
+	background-size: 10px 16px;
+}
+.loadMore{
+	font-size:12px;
+	color:#666;
+	position: fixed;
+    bottom: 55px;
+    left: 50%;
+    transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+}
+
+/* 固定条 */
+.fixed_bar{
+	/* height: 45px; */
+	background: url(../../../../file/h5/weixin/images/fixed_bg.png) 0 0 no-repeat;
+	background-size: 100% 45px;
+	box-shadow: 0px 0px 4px #ddd;
+	position: fixed;
+    bottom: 0;
+    left: 50%;
+    width: 100%;
+    min-width: 320px;
+    max-width: 640px;
+    transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+}
+.fixed_logo{
+	width: 35px;
+	height: 35px;
+	background: url(../../../../file/h5/weixin/images/fixed_logo.png) 0 0 no-repeat;
+	background-size: 35px 35px;
+	float: left;
+	margin: 5px 8px;
+}
+.fixed_con{
+	padding: 3px 0;
+	float: left;
+}
+.fixed_con p{
+	font-size: 17px;
+	color: #333;
+}
+.fixed_con span{
+	font-size: 8px;
+	color: #666;
+}
+.load{
+	padding-right: 8px;
+	float: right;
+}
+.load a{
+	float: left;
+	width: 80px;
+	height: 26px;
+	line-height: 26px;
+	font-size: 12px;
+	border-radius: 13px;
+	background: #f74a3d;
+	color: #fff;
+	text-align: center;
+	margin-top: 10px;
+}
+.load i{
+	display: inline-block;
+	width: 20px;
+	height: 30px;
+	background: url(../../../../file/h5/weixin/images/close.png) 5px 15px no-repeat;
+	background-size: 15px 15px;
+}
+
+/* info_wrap */
+.info_wrap{
+	display: none;
+	margin-bottom: 55px;
+}

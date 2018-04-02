@@ -1,0 +1,117 @@
+/* 
+*风险测评
+*
+ */
+body {
+	background:#f3f3f3;
+	margin: 0;
+	padding: 0;
+}
+/* 顶部开始*/
+#top_wrap{
+	background: #fff;
+}
+.top{
+	width: 100%;
+	height: 44px;
+	line-height:44px;
+	text-align: center;
+	font-size: 16px;
+	position:relative;
+	border-bottom: 2px dotted #ddd;
+}
+.top_left{
+	width: 36px;
+	height: 36px;
+	background: url('../../../../file/h5/weixin/images/back.png') 13px no-repeat;
+	background-size: 10px 16px;
+	position:absolute;
+	left:0px;
+	top:1px;
+}
+/* 顶部结束 */
+.pageContent {
+	width: 100%;
+	max-width: 640px;
+	font: 24px/36px Arial;
+	position: relative;
+	margin: auto;
+	word-break: break-all;
+	overflow: hidden;
+	box-shadow: #ccc 0 0 50px;
+}
+
+.body_title {
+	width: 100%;
+	line-height: 30px;
+	padding: 10px 0 10px 0;
+	font-size: 20px;
+	text-align: center;
+	font-weight: bold;
+}
+
+.q_catalog {
+	text-indent: 20px;
+	font-size: 16px;
+	font-weight: bold;
+	font-family: ΢���ź�
+}
+.list_item {
+	padding-left: 5%;
+	font-size: 14px;
+	border-bottom:2px dotted #ddd;
+}
+.mb5{
+	margin-bottom:10px;
+}
+.input_item_box {
+	background:#fff;
+	width: 95%;
+	border-bottom: none;
+	position:relative;
+}
+.item_bg {
+	border:1px solid #999;
+}
+.require {
+	width: 18px;
+	height: 18px;
+	margin-top: 0px;
+	background:#f87267;
+}
+.require:checked + .label:after {
+	/* background-color: #f87267; */
+	border-radius: 100%;
+	content: "";
+	display: inline-block;
+	height: 9px;
+	margin: 2px;
+	width: 9px;
+	position:absolute;
+	left:7px;
+	top:12px;
+}
+.label {
+	padding-left: 5px;
+}
+input[type=radio],label {
+	vertical-align: middle;
+}
+.btn_group {
+	padding: 7px 12px;
+}
+.btn_submit {
+	background-color: #f64a3c;
+	width: 100%;
+	text-align: center;
+	cursor: pointer;
+	color: #fff;
+	line-height: 35px;
+	height: 35px;
+	border:0;
+	border-radius:20px;
+	z-index: 1000;
+}
+.bodyBox a:hover{
+	
+}

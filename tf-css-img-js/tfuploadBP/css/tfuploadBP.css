@@ -1,0 +1,156 @@
+/*
+ *
+ *上传BP
+ *
+ */
+
+.myCrowdfunds{
+	background:#fff;
+}
+.rightSix{
+	position: absolute;
+    top: 0px;
+    left: -60px;
+	width:100px;
+    margin-top: 26px;
+}
+.example{
+	width:30px;
+	position: absolute;
+    top: 21px;
+    right: 0px;
+    z-index: 999;
+    color:#f74a3d;
+    font-size:15px;
+}
+.right_content{
+	padding-left:120px;
+	position:relative;
+}
+/* 基础信息部分开始 */
+.login-title{
+	padding:20px 0 10px 0;
+	color:#333;
+	font-size:16px;
+	border-bottom:1px solid #e3e3e3;
+}
+.colorChange{
+	color:#333;
+	padding-top:26px;
+	overflow:hidden;
+}
+.colorChange label{
+	color:#999;
+	font-weight:normal;
+	margin-right:23px;
+}
+.colorChange .info{
+	margin:0;
+	line-height:36px;
+	float:left;
+}
+.colorChange .info p{
+	line-height:22px;
+    padding:6px 60px 0px 173px;
+    text-align: justify;
+}
+#tfup_icon{
+	margin-left:47px;
+	float:none;
+	padding:0 33px;
+	width:auto;
+	background:url("../../../../file/tf/tfup/images/tfup_icon.png") left center no-repeat;
+	background-size:21px 21px;
+}
+.registration ul li.info{
+	float:none;
+	position:relative;
+}
+.registration ul li.info label{
+	font-weight:normal;
+	width:220px;
+	text-align:left;
+}
+.registration ul li.info input,.registration ul li.info textarea{
+	float:none;
+	padding:8px 20px;
+	background:#f3f3f3;
+	border-radius:0;
+	border:0;
+	width:100%;
+}
+.registration ul li.info textarea{
+	resize:none;
+}
+.colorChange p{
+	padding:33px 0 0 0;
+	margin:10px 0;
+	color:#333;
+}
+.file-down{
+	font-size: 12px;
+	color:#666;
+}
+.word{
+	text-align:center;
+}
+.bussiness_plan{
+    position: absolute;
+    right: 0;
+    z-index:99;
+}
+/* 提交按钮 */
+#btnLogin{
+	width:280px;
+	height:49px;
+	cursor:pointer;
+	background:#f74b3a;
+}
+.login-submit{
+	text-align:center;
+	margin:65px 0;
+}
+.login-submit a{
+	display:block;
+	margin:10px 0;
+	color:#f74b3a;
+}
+.cred{
+	color:#f74b3a;
+}
+.preImageContent{
+	display:none;
+	width:100%;
+	text-align:center;
+}
+label img{
+	width:7px;
+	height:7px;
+	margin-right:5px;
+}
+.registration ul li.info span{
+	width: 9%;
+    padding: 0;
+    text-align: center;
+    margin: 5px 36px;
+    background: none;
+    background: #f74a3d;
+    height: 30px;
+    line-height: 30px;
+    font-size: 12px;
+    color: #fff;
+    border-radius: 7px;
+    margin-left: 260px;
+}
+#plantBook{
+    margin: 0 10px 0px 36px;
+    position: absolute;
+    top: 0;
+    left: 90px;
+    opacity: 0;
+}
+.abLoad{
+    position: absolute;
+    top: -2px;
+    left: 38%;
+}

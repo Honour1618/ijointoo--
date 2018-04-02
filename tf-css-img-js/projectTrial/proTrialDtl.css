@@ -1,0 +1,44 @@
+/* 
+*œÓƒø≥Ô…ÛœÍ«È“≥
+*
+ */
+ body{
+ 	min-width:320px;
+ 	max-width:640px;
+ 	margin:0 auto;
+ }
+ .progress{
+ 	text-align:center;
+ }
+ .progress h2{
+ 	height:40px;
+ 	line-height:40px;
+ 	font-weight:normal;
+ }
+ .main{
+ 	font-size:14px;
+ 	line-height:22px;
+ }
+ .trail, .contact{
+ 	padding:10px 15px;
+ }
+ .trail h2, .contact h2{
+ 	font-weight:normal;
+ }
+ .trail_wrap{
+ 	text-align:center;
+ 	font-size:12px;
+ 	line-height:20px;
+ }
+ .phone{
+ 	text-align:center;
+ 	margin:10px 0;
+ }
+ .email{
+ 	display:block;
+ 	text-align:center;
+ }
+ .item{
+ 	display:block;
+ 	text-align:right;
+ }

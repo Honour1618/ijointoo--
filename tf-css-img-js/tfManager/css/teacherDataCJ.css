@@ -1,0 +1,659 @@
+  html,body{
+            min-width: 320px;
+            max-width: 640px;
+            margin: 0 auto;
+        }
+[contentEditable=true]:empty:not(:focus):before{
+    content:attr(data-text);
+    color:#989898;
+}
+
+textarea::-webkit-input-placeholder:after{ display:block; content:"  ";/* \A 表示换行 */ color:red; };  /* line@ \A line# */
+textarea::-moz-placeholder:after{ content:" ";/* \A 表示换行 */ color:red; };         
+        .page{
+            width: 100%;
+            margin: 0 auto;
+        }
+        .page::before{
+            content:" ";
+            position:absolute;
+            left:0;
+            right:0;
+            top:0;
+            bottom:0;
+            background: #226995;/* 颜色自定义 */
+            z-index:-100;/* 突然想到个游戏，是男人就下100层。。。 */
+        }
+        html{
+            position: relative;
+    		min-height: 100%;
+        }
+        .clearfix:after{
+            display: block;
+            width: 0;
+            height:0;
+            content: "";
+            clear: both;
+        }
+
+
+        .user-img-show .item{
+            padding: 2px;
+        }
+        .user-img-show img{
+            width: 100%;
+            height: 100%;
+            vertical-align: top;
+        }
+        .sub-apply{
+            width: 200px;
+            height: 53px;
+            display: block;
+            border: none;
+            background: url("../images/teac-sub-btn-bg_11.png") no-repeat left 0 top 0;
+            background-size: 100% 100%;
+            margin: 27px auto 30px;
+              outline: none;
+              -webkit-tap-highlight-color:rgba(255,255,255,0);
+/*            position: absolute;
+            left: 50%;
+            margin-left: -100px;
+            bottom: 40px;*/
+            animation:helpAnimate 0.5s infinite;
+            -webkit-animation:helpAnimate 0.5s infinite;
+
+        }
+        .save-box{
+            background: #226a95;
+            height: 100%;
+        }
+        .teac-title{
+            width: 80%;
+            margin: 0 auto;
+            height: 88px;
+            box-sizing: border-box;
+        }
+
+        .teac-title2{
+        	margin:0 -11px;
+        }
+        .teac-title>img{
+            width: 100% !important;
+            margin-bottom: -55px;
+            margin-top: 18px;
+          /*   margin:18px auto -55px !important; */
+        }
+        .teac-title2>img{
+            width: 100% !important;
+            height: inherit !important;
+            margin-left: 0 !important;
+            margin-right: -15px;
+            margin-top: 18px;
+        }
+        .teac-msg-box{
+            margin: 0 auto 0;
+            background: rgba(7,193,192,0.9);
+            padding:76px 11px 27px 11px;
+            box-sizing: border-box;
+            min-height: 455px;
+            width: 80%;
+            z-index: 10;
+        }
+        .teac-msg-box>dt{
+         	padding-bottom:12px;
+        	padding-top:9px; 
+        }
+        .teac-msg-box>dt>img{
+            margin-left: -19px;
+            width: 135px;
+            height: 36px;
+            vertical-align: top;
+        }
+
+        .al-add{
+            width:100%;
+            display: block;
+            padding:0 7px;
+            box-sizing:border-box;
+            font-size:15px;
+            color:#333333;
+            height: 34px;
+        	margin-bottom:12px;
+            border:3px solid;
+            border-radius:5px;
+        	-webkit-border-image: url(../images/teac-ipt-bg_03.png) 8 8 8 8 stretch stretch;
+        	-o-border-image: url(../images/teac-ipt-bg_03.png) 8 8 8 8 stretch stretch;
+        	border-image: url(../images/teac-ipt-bg_03.png) 8 8 8 8 stretch stretch; 
+        }
+        .al-ms{
+            display: block;
+            width:100%;
+            /* border: none;
+            background: url("../images/anli_13.png") no-repeat left 0 top 0;
+            background-size: 100% 100%; */
+            border:3px solid;
+            border-radius:5px;
+        	-webkit-border-image: url(../images/lvli-input-border_03.png) 8 8 8 8 stretch stretch;
+        	-o-border-image: url(../images/lvli-input-border_03.png) 8 8 8 8 stretch stretch;
+        	border-image: url(../images/lvli-input-border_03.png) 8 8 8 8 stretch stretch; 
+            min-height: 186px;
+            margin: 12px auto 0;
+            padding: 5px;
+            box-sizing: border-box;
+            resize: none;
+            font-size:15px;
+            color:#333333;
+        }
+        .menpai{
+        	width:170px !important;
+        }
+		.al-ln{
+		    display: block;
+            width:100%;
+            height:70px;
+            line-height:18px;
+            box-sizing: border-box;
+		    border:3px solid;
+            border-radius:5px;
+             padding: 5px;
+        	-webkit-border-image: url(../images/lvli-input-border_03.png) 8 8 8 8 stretch stretch;
+        	-o-border-image: url(../images/lvli-input-border_03.png) 8 8 8 8 stretch stretch;
+        	border-image: url(../images/lvli-input-border_03.png) 8 8 8 8 stretch stretch; 
+        	resize: none;
+        	font-size:15px;
+        	color:#333333;
+		}
+        .user-img-show{
+            background: url("../images/add-logo_07.png") no-repeat left 0 top 0;
+            background-size: 100% 100%;
+            width: 91px;
+            min-height: 91px;
+            margin: 0 auto 25px;
+        }
+        .boxBg{
+            position: fixed;
+            left: 0;
+            bottom: 0;
+            width: 100%;
+            z-index: -1;
+
+        }
+
+        .teac-msg-box>dd>.ts{
+        	display:none;
+        	font-size:14px;
+        	color:red;
+        	line-height:24px;
+        }
+        
+        .back-btn{
+            display: block;
+            position: absolute;
+            left: 12px;
+            top:13px;
+            width: 58px;
+            height: 55px;
+            background: none;
+            border:none;
+            outline:none;
+        }
+        .back-btn>img{
+            width: 100%;
+        }
+        /*input输入提示*/
+        .input-prompt{
+            text-align: right;
+            color: #226a95;
+            margin-bottom: 6px;
+            line-height: 22px;
+            height: 22px;
+        }
+        .input-prompt>span{
+            line-height: 22px;
+            height: 22px;
+        }
+        @keyframes helpAnimate
+        {
+            0% {
+                transform:rotate(2deg);
+                -ms-transform:rotate(2deg); 	/* IE 9 */
+                -moz-transform:rotate(2deg); 	/* Firefox */
+                -webkit-transform:rotate(2deg); /* Safari 和 Chrome */
+                -o-transform:rotate(2deg);
+            }
+            50%  {
+                transform:rotate(-2deg);
+                -ms-transform:rotate(-2deg); 	/* IE 9 */
+                -moz-transform:rotate(-2deg); 	/* Firefox */
+                -webkit-transform:rotate(-2deg); /* Safari 和 Chrome */
+                -o-transform:rotate(-2deg);
+            }
+            100%{
+                transform:rotate(2deg);
+                -ms-transform:rotate(2deg); 	/* IE 9 */
+                -moz-transform:rotate(2deg); 	/* Firefox */
+                -webkit-transform:rotate(2deg); /* Safari 和 Chrome */
+                -o-transform:rotate(2deg);
+            }
+        }
+
+        @-webkit-keyframes helpAnimate /* Safari and Chrome */
+        {
+            0% {
+                transform:rotate(2deg);
+                -ms-transform:rotate(2deg); 	/* IE 9 */
+                -moz-transform:rotate(2deg); 	/* Firefox */
+                -webkit-transform:rotate(2deg); /* Safari 和 Chrome */
+                -o-transform:rotate(2deg);
+            }
+            50%{
+                transform:rotate(-2deg);
+                -ms-transform:rotate(-2deg); 	/* IE 9 */
+                -moz-transform:rotate(-2deg); 	/* Firefox */
+                -webkit-transform:rotate(-2deg); /* Safari 和 Chrome */
+                -o-transform:rotate(-2deg);
+            }
+            100%{
+                transform:rotate(2deg);
+                -ms-transform:rotate(2deg); 	/* IE 9 */
+                -moz-transform:rotate(2deg); 	/* Firefox */
+                -webkit-transform:rotate(2deg); /* Safari 和 Chrome */
+                -o-transform:rotate(2deg);
+            }
+        }
+        .industry-box,.jintong-box,.jineng-box{
+        	-webkit-tap-highlight-color:rgba(255,255,255,0);
+        }
+        .industry-list{
+        	display:inline-block;
+        	line-height:24px;
+        	height:24px;
+        	padding:0 18px;
+        	font-size:12px;
+        	border:3px solid #226a95;
+        	border-radius:5px;
+        	margin-bottom:7px;
+        	color:#11567f;
+        	background:url("../images/card-list-bg.png") no-repeat left 0 top 0;
+        	margin-right:2px;
+        }
+         .industry-list-active{
+        	background:#75c81b !important;
+        	border:3px solid #f6fba5 !important;
+        	color:#ffffff !important;
+        }
+  .alertShow {
+    width: 60%;
+    min-height: 60px;
+    max-width: 500px;
+    border: 1px solid #999;
+    border-radius: 5px;
+    background: #fff;
+    position: fixed;
+    top: 30%;
+    left: 50%;
+    transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+    text-align: center;
+    color: #f74a3d;
+    padding: 40px 10px 10px;
+    box-shadow: 0 0 10px #999;
+    -webkit-box-shadow: 0 0 10px #999;
+    -moz-box-shadow: 0 0 10px #999;
+    -ms-box-shadow: 0 0 10px #999;
+    -o-box-shadow: 0 0 10px #999;
+    z-index: 99;
+    display: none;
+}
+.common_mask {
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.4);
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 11;
+    display: none;
+}
+        .anLi-box{
+            width: 100%;
+        }
+        .anLi-list{
+            border: 3px solid;
+            box-sizing: border-box;
+            border-radius: 5px;
+            background: url("../images/anLi-list-box-bg_03.png")  no-repeat left -3px top -3px;
+            background-size:105% 105%;
+            -webkit-border-image: url(../images/add-anli-list-bg.png) 7 7 7 7 stretch stretch;
+            -o-border-image: url(../images/add-anli-list-bg.png) 7 7 7 7 stretch stretch;
+            border-image: url(../images/add-anli-list-bg.png) 7 7 7 7 stretch stretch;
+            position: relative;
+            margin-top: 25px;
+        }
+        .anLi-list>h3{
+            line-height: 31px;
+            width: 100%;
+            height: 31px;
+            margin-top: 15px;
+            overflow: hidden;
+            font-size: 15px;
+            color: #333333;
+            font-weight: bold;
+            padding:0 6px;
+            box-sizing:border-box;
+        }
+        .anLi-list>p{
+            line-height: 15px;
+            font-size: 14px;
+            color: #666666;
+            padding:0 6px;
+            height:30px;
+            margin-bottom: 6px;
+/*             text-overflow: ellipsis;
+            white-space:nowrap;  */
+            overflow:hidden;
+        }
+        .anLi-list-btn{
+            background: none;
+            border: none;
+            width: 50px;
+            line-height: 20px;
+            vertical-align: bottom;
+            margin-bottom: 5px;
+            float: right;
+        }
+
+        .anLi-check>img{
+            width: 100%;
+        }
+        .revise{
+            background: url("../images/anli-xg-btn.png") no-repeat left 0 top 5px;
+            background-size: 100%;
+            margin-right:11px;
+        }
+        .del{
+            background: url("../images/anli-del-btn.png") no-repeat left 0 top 5px;
+            background-size: 100% ;
+            margin-left: 11px;
+            margin-right: 11px;
+        }
+        .addAl-btn{
+            width: 132px;
+            border: none;
+            background:none;
+            outline: none;
+            padding: 0;
+            display: block;
+            margin: 10px auto 0;
+        }
+        .addAl-btn img{
+            width: 100%;
+            vertical-align: bottom;
+        }
+        .anLi-list-icon{
+            width: 37px;
+            height: 37px;
+            border-radius: 50%;
+            background: url("../images/anlist-icon.png") no-repeat left 0 top 0;
+            background-size: 100% 100%;
+            position: absolute;
+            left: 18px;
+            top: -22px;
+    		padding:2px;
+    		box-sizing: border-box;
+        }
+        .anLi-list-icon>img{
+            width: 100%;
+            height: 100%;
+            border-radius: 50%;
+            vertical-align:bottom;
+            margin-top: 1px;
+
+        }
+        
+        
+        /*page2 添加案例页面*/
+         .page2{
+            min-width: 320px;
+            max-width: 640px;
+            margin: 0 auto;
+            height: 100%;
+            display:none;
+
+        }
+       /*不够一屏的情况下，解决一屏显示背景*/
+        .page2::before{
+            content:" ";
+            position:absolute;
+            left:0;
+            right:0;
+            top:0;
+            bottom:0;
+            background: #226a95;/* 颜色自定义 */
+            z-index:-100;/* 突然想到个游戏，是男人就下100层。。。 */
+        }
+
+
+        .page2 body{
+
+            height: 100%;
+        }
+
+        .page2 .user-img-show2 .item{
+            padding: 2px;
+
+        }
+        .page2 .user-img-show2 img{
+            width: 100%;
+            min-height: 90px;
+            vertical-align: top;
+        }
+        .page2 .sub-apply{
+            width: 200px;
+            height: 53px;
+            display: block;
+            border: none;
+            background: url("../images/save-btn-bg_03.png") no-repeat left 0 top 0;
+            background-size: 100% 100%;
+            margin: 27px auto 30px;
+            outline: none;
+            -webkit-tap-highlight-color:rgba(255,255,255,0);
+/*            position: absolute;
+            left: 50%;
+            margin-left: -100px;
+            bottom: 40px;*/
+            animation:helpAnimate 0.5s infinite;
+            -webkit-animation:helpAnimate 0.5s infinite;
+
+        }
+        .page2 .save-box{
+            background: #226a95;
+            height: 100%;
+        }
+        .page2 .teac-title{
+            width: 80%;
+            margin: 0 auto;
+            height: 88px;
+            padding:0 11px;
+            box-sizing:border-box;
+        }
+        .page2 .teac-title img{
+            width: 273px;
+            float: right;
+           margin-bottom: -55px;
+            margin-top: 18px;
+        }
+
+        .page2 .teac-msg-box{
+            margin: 0 auto 0;
+            background: rgba(7,193,192,0.8);
+            padding:76px 11px 17px 11px;
+            box-sizing: border-box;
+            min-height: 455px;
+            width: 80%;
+            z-index: 10;
+        }
+        .page2 .teac-msg-box>dt>img{
+            margin-left: -19px;
+            width: 135px;
+            height: 36px;
+            vertical-align: top;
+        }
+
+        .page2 .al-add{
+            width:100%;
+            display: block;
+/*            text-indent: 1em;
+            border: none;
+            background: url("images/teac-ipt-bg_03.png") no-repeat left 0 top 0;
+            background-size: 100% 100%;
+            height: 33.5px;
+            margin: 12px auto 0;*/
+
+            padding:0 7px;
+            box-sizing: border-box;
+            font-size: 15px;
+            color: #333333;
+            height: 34px;
+            /* margin: 15px auto 15px; */
+            border: 3px solid;
+            border-radius: 5px;
+            -webkit-border-image: url(../images/teac-ipt-bg_03.png) 8 8 8 8 stretch stretch;
+            -o-border-image: url(../images/teac-ipt-bg_03.png) 8 8 8 8 stretch stretch;
+            border-image: url(../images/teac-ipt-bg_03.png) 8 8 8 8 stretch stretch;
+        }
+        .page2 .al-ms{
+            display: block;
+            width:100%;
+            border: 3px solid;
+            border-radius: 5px;
+            -webkit-border-image: url(../images/anli_13.png) 8 8 8 8 stretch stretch;
+            -o-border-image: url(../images/anli_13.png) 8 8 8 8 stretch stretch;
+            border-image: url(../images/anli_13.png) 8 8 8 8 stretch stretch;
+            height: 117px;
+            margin: 12px auto 0;
+            padding: 5px;
+            text-align: justify;
+            box-sizing: border-box;
+            resize: none;
+            font-size: 15px;
+            color: #333333;
+        }
+        .page2 .user-img-show2{
+/*             background: url("../images/add-logo_07.png") no-repeat left 0 top 0;
+            background-size: 100% 100%; */
+            width: 91px;
+            min-height: 91px;
+            margin: 0 auto 5px;
+            border: 3px solid;
+            -webkit-border-image: url(../images/add-Logo-border_07.png) 6 6 6 6 stretch stretch;
+            -o-border-image: url(../images/add-Logo-border_07.png)  6 6 6 6  stretch stretch;
+            border-image: url(../images/add-Logo-border_07.png) 6 6 6 6  stretch stretch; 
+            -webkit-border-radius: 5px;
+            -moz-border-radius: 5px;
+            border-radius: 5px;
+        }
+        .page2 .boxBg{
+            position: fixed;
+            left: 0;
+            bottom: 0;
+            width: 100%;
+            z-index: -1;
+
+        }
+        .page2 .teac-msg-box>dd>.user_acatar_btn2{
+            display: block;
+            width: 91px;
+            height: 91px;
+            margin: 0 auto -91px;
+            color: #666;
+            opacity: 0;
+
+        }
+        .page2 .teac-msg-box>dd>.user_acatar_btn{
+            width: 91px;
+            height:20px;
+            opacity: 0;
+            margin:0 auto;
+            display:none;
+        }
+        .reCheck-btn{
+        	width:91px;
+        	height:20px;
+        	line-height:20px;
+        	text-align:center;
+        	margin:-20px auto 15px;
+        	display:none;
+        	color:#ffffff;
+        }
+        .page2 .back-btn{
+            display: block;
+            position: absolute;
+            left: 12px;
+            top:13px;
+            width: 58px;
+            height: 55px;
+            background: none;
+        }
+        .page2 .back-btn>img{
+            width: 100%;
+        }
+        /*input输入提示*/
+        .page2 .input-prompt{
+            text-align: right;
+            color: #226a95;
+            margin-bottom: 6px;
+            line-height: 22px;
+            height: 22px;
+        }
+        .page2 .input-prompt>span{
+            line-height: 22px;
+            height: 22px;
+        }
+        /* div模拟文本框 */
+        .txtSR{
+                width: 100%;
+				min-height: 200px;
+				height:auto !important;
+           	 	border:3px solid;
+            	border-radius:5px;
+        		-webkit-border-image: url(../images/lvli-input-border_03.png) 7 7 7 7 stretch stretch;
+        		-o-border-image: url(../images/lvli-input-border_03.png) 7 7 7 7 stretch stretch;
+        		border-image: url(../images/lvli-input-border_03.png) 7 7 7 7 stretch stretch; 
+				_height: 120px;
+				margin-left: auto;
+				margin-right: auto;
+				padding: 4px 7px;
+				outline: 0;
+				color:#333333;
+				background:#ffffff;
+				font-size: 15px;
+				line-height: 18px;
+				word-wrap: break-word;
+				overflow-x: hidden;
+				overflow-y: hidden; 
+				text-align: justify;
+				
+/* 								width: 400px;
+				min-height: 20px;
+				设置最小高度
+				max-height: 1000px;
+				设置最大高度超过300px时出现滚动条
+				_height: 120px;
+				margin-left: auto;
+				margin-right: auto;
+				padding: 13px;
+				outline: 0;
+				border: 1px solid #a0b3d6;
+				font-size: 16px;
+				line-height: 24px;
+				word-wrap: break-word;
+				overflow-x: hidden;
+				overflow-y: auto;
+				border-color: rgba(82, 168, 236, 0.8);
+				box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1), 0 0 8px rgba(82, 168, 236, 0.6); */
+
+        }

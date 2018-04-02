@@ -1,0 +1,192 @@
+/*
+ *
+ *信息提交-预览
+ *
+ */
+
+body{
+	background:#f3f3f3;
+}
+pre{
+	white-space: pre-wrap;
+    text-align: justify;
+    line-height:20px;
+}
+/* 顶部导航 */
+.topNav{
+	text-align:center;
+	line-height:44px;
+	font-size:18px;
+	color:#333;
+	background:#fff;
+    box-shadow: 1px 1px 9px rgba(4,0,0,0.2);
+    -webkit-box-shadow: 1px 1px 9px rgba(4,0,0,0.2);
+    -moz-box-shadow: 1px 1px 9px rgba(4,0,0,0.2);
+    -ms-box-shadow: 1px 1px 9px rgba(4,0,0,0.2);
+    -o-box-shadow: 1px 1px 9px rgba(4,0,0,0.2);
+}
+.fan{
+	display:block;
+	width: 30px;
+	height: 30px;
+	background: url(../../../../file/h5/weixin/images/prevHei.png) 0 0 no-repeat;
+	background-size: 10px 17px;
+	margin: 12px 12px 0;
+	position:absolute;
+}
+.body_style{
+	max-width:640px;
+	min-width:320px;
+	margin:0 auto;
+}
+/* 基础信息部分开始 */
+.login-title{
+	color:#333;
+	font-size:16px;
+	height:45px;
+	line-height:45px;
+	padding-left:12px;
+}
+.mien{
+	line-height:20px;
+	height:auto;
+	margin-top:5px;
+}
+.mien p{
+	font-size:12px;
+	color:#bbb;
+}
+.colorChange{
+	color:#333;
+	overflow:hidden;
+	background:#fff;
+	margin-bottom:10px;
+}
+.colorChange li{
+	padding:8px 12px;
+	color:#333;
+	font-size:14px;
+	line-height:20px;
+	padding-left:28px;
+	background:url("../../../../file/tf/tfup/images/business_icon.png") 8px center no-repeat;
+	background-size:7px 7px;
+	margin:5px 0;
+}
+.colorChangeOne li{
+	background:none;
+}
+li.resource{
+	background:none;
+	padding-left:12px;
+}
+.resource img{
+	width:100%;
+}
+.colorChange label{
+	color:#666;
+	font-weight:normal;
+	margin-right:23px;
+	font-size:14px;
+}
+.colorChange .info p{
+	line-height:22px;
+    padding:6px 60px 0px 173px;
+    text-align: justify;
+}
+/* 项目标签 */
+.compRangList{
+	text-align:center;
+}
+.compRangList a{
+	color: #f16d6d;
+    border: 1px solid #f16d6d;
+    padding: 0px 20px;
+    margin: 5px;
+    -moz-border-radius: 20px;
+    -webkit-border-radius: 20px;
+    border-radius: 20px;
+    font-size: 12px;
+    display: inline-block;
+    cursor:pointer;
+}
+li.tags{
+	margin:0;
+	padding-top:0;
+}
+/* 寻求帮助 */
+.i_button{
+	width:100%;
+	height:40px;
+	line-height:40px;
+	color:#fff;
+	font-size:15px;
+	margin-top:10px;
+	background:#f74a3d;
+	position:fixed;
+	bottom:0;
+	left:50%;
+	max-width:640px;
+	min-width:320px;
+	border:none;
+	outline:none;
+	text-align:center;
+	transform:translateX(-50%);
+	-webkit-transform:translateX(-50%);
+	-ms-transform:translateX(-50%);
+	-o-transform:translateX(-50%);
+}
+li.mb10{
+	border-bottom:10px solid #f3f3f3;
+}
+.advantage{
+	margin-bottom:49px;
+}
+/* 情怀三部曲 */
+.storyMood{
+	overflow:hidden;
+}
+.storyMood span{
+	width:33%;
+	float:left;
+	text-align:center;
+	border-right: 1px solid #eee;
+}
+.storyMood span:last-child{
+	border:none;
+}
+.storyOne,.storyTwo,.storyThree{
+	max-width:640px;
+	margin:0 auto;
+	display:none;
+	color:#666;
+}
+.storyOne pre,.storyTwo pre,.storyThree pre{
+    line-height: 28px;
+    font-size: 14px;
+    text-indent: 2em;
+    padding: 0 23px;
+    text-align: justify;
+}
+.delete{
+	max-width:640px;
+	display:none;
+	padding: 0 12px;
+	text-align:center;
+	margin:20px auto;
+	position:relative;
+	font-size:18px;
+	color:#333;
+}
+.delete img{
+	width:20px;
+	position:absolute;
+	right:23px;
+}
+/* 视频预览 */
+#link_video{
+	width:100%;
+    margin-top: 10px;
+}
+.mbn10{
+	margin-bottom:0;
+}

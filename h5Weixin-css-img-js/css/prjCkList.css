@@ -1,0 +1,77 @@
+/*
+ * 进入评审的项目信息
+ *
+ ***/
+ 
+ .project_panel {
+	width: 100%;
+	height: auto;
+	margin-top: 15px;
+	float: left;
+	background-color: #fff;
+	font-family: "微软雅黑";
+	color: #333;
+	cursor: pointer;
+}
+
+.project_content {
+	width: 100%;
+	height: auto;
+	float: left;
+	text-indent: 28px;
+	font-size: 14px;
+	line-height: 25px;
+	padding: 10px 10px 0 10px;
+	overflow: hidden;
+	color: #5D5F5F;
+}
+
+.project_title {
+	font-size: 16px;
+	font-weight: bold;
+	line-height: 30px;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	overflow: hidden;
+	text-align: center;
+	width: 100%;
+	float: left;
+	padding: 0 20px 0 20px;
+	color: #444;
+	font-family: "微软雅黑";
+}
+
+.project_comp_link {
+	font-size: 16px;
+	height: 30px;
+	line-height: 30px;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	overflow: hidden;
+	text-align: center;
+	width: 100%;
+	float: left;
+	color: #444;
+	font-family: "微软雅黑";
+}
+
+.project_comp_link a {
+	color: #07B4A0;
+}
+
+.project_code {
+	width: 100%;
+	height: 100px;
+	float: left;
+	text-align: center;
+}
+
+.project_code_tip {
+	width: 100px;
+	height: 90px;
+}
+
+.project_code_img {
+	width: 100px;
+	height: 100px;
+}

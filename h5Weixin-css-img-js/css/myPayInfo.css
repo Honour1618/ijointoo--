@@ -1,0 +1,114 @@
+/*
+ * 我的打款明细
+ *
+ ***/
+ 
+ body {
+	font-family: 微软雅黑;
+}
+
+p {
+	padding: 10px 10px 0 10px;
+}
+
+.my_title_bar {
+	font-size: 22px;
+	font-weight: bold;
+	margin-top: 20px;
+	padding-top: 10px;
+	margin: 0 auto;
+	width: 200px;
+}
+
+.my_title_bar div {
+	float: left;
+}
+
+.empty_tip {
+	width: 100%;
+	background: white;
+	margin-top: 10px;
+	height: 35px;
+	line-height: 35px;
+	text-align: center;
+}
+
+.deposit_table {
+	width: 100%;
+	background: white;
+	padding: 10px 0 10px 0;
+	margin-top: 10px;
+	border: 1px solid #e6e6e6;
+}
+
+.td_title {
+	width: 100%;
+	text-align: center;
+	height: 35px;
+	line-height: 25px;
+	font-weight: bold;
+}
+
+.td_left {
+	width: 80px;
+	min-width: 80px;
+	text-align: right;
+	height: 35px;
+	line-height: 25px;
+	font-weight: bold;
+	padding-right: 5px;
+}
+
+.td_right {
+	padding-left: 10px;
+	line-height: 25px;
+}
+
+.pay_prj_title {
+	text-indent: 5px;
+	font-size: 15px;
+	font-weight: bold;
+	margin-top: 20px;
+	background: #07B4A0;
+	height: 35px;
+	line-height: 35px;
+	color: white;
+	font-family: '微软雅黑';
+}
+
+.pay_prj_title span {
+	font-size: 14px;
+	font-weight: normal;
+	padding-left: 5px;
+}
+
+.msg_count {
+	width: 25px;
+	height: 25px;
+	line-height: 25px;
+	background-color: red;
+	border-radius: 100%;
+	color: white;
+	text-align: center;
+	margin-top: 3px;
+	font-size: 16px;
+}
+
+.upper {
+	background: url("../../../../h5/img/upper.png");
+}
+
+.lower {
+	background: url("../../../../h5/img/lower.png");
+}
+
+.upper, .lower {
+	height: 10px;
+	position: relative;
+}
+
+.content {
+	background-color: white;
+	padding: 30px;
+	font-size: 16px;
+}

@@ -1,0 +1,52 @@
+body {
+    font-family: "Microsoft YaHei";
+}
+html,body,div,span,
+applet,object,iframe,
+h1,h2,h3,h4,h5,h6,p,blockquote,pre,
+a,abbr,acronym,address,big,cite,code,
+del,dfn,em,font,img,ins,kbd,q,s,samp,
+small,strike,strong,sub,sup,tt,var,
+dd,dl,dt,li,ol,ul,
+fieldset,form,label,legend,
+table,caption,tbody,tfoot,thead,tr,th,td {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+ol,ul ,li{
+    list-style: none;
+}
+
+q:before,q:after,
+blockquote:before,blockquote:after {
+    content: "";
+}
+body{
+}
+h1,
+h2,
+h3,
+h4,
+h5 {
+    margin: 0 ;
+}
+/*a标签默认样式*/
+/*a{
+    background-color: inherit !important;
+}*/
+.nav>li>a:hover, .nav>li>a:focus{
+    background-color: inherit ;
+}
+.fl {
+    float: left;
+}
+.fr {
+    float: right;
+}
+
+input[type=number] {    -moz-appearance:textfield;}input[type=number]::-webkit-inner-spin-button,input[type=number]::-webkit-outer-spin-button {    -webkit-appearance: none;    margin: 0;}

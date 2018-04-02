@@ -1,0 +1,136 @@
+/* 
+*项目筹审
+*
+ */
+ body{
+ 	backgorund:#f2f2f2;
+ }
+ h2{
+	height: 40px;
+	line-height: 40px;
+	font-size:16px;
+}
+/**
+ *
+ * Pull down styles
+ *
+ */
+#pullDown, #pullUp {
+	background:rgba(0,0,0,0);
+	height:40px;
+	line-height:40px;
+	border-bottom:0;
+	font-weight:bold;
+	font-size:14px;
+	color:#888;
+}
+#pullDown .pullDownIcon, #pullUp .pullUpIcon  {
+	display:block;
+	float:left;
+	background-size:30px;
+	-webkit-transition-property:-webkit-transform;
+	-webkit-transition-duration:250ms;	
+}
+#pullDown .pullDownIcon {
+	-webkit-transform:rotate(0deg) translateZ(0);
+}
+#pullUp .pullUpIcon  {
+	-webkit-transform:rotate(-180deg) translateZ(0);
+}
+
+#pullDown.flip .pullDownIcon {
+	-webkit-transform:rotate(-180deg) translateZ(0);
+}
+
+#pullUp.flip .pullUpIcon {
+	-webkit-transform:rotate(0deg) translateZ(0);
+}
+
+#pullDown.loading .pullDownIcon, #pullUp.loading .pullUpIcon {
+	background-position:0 100%;
+	-webkit-transform:rotate(0deg) translateZ(0);
+	-webkit-transition-duration:0ms;
+	-webkit-animation-name:loading;
+	-webkit-animation-duration:2s;
+	-webkit-animation-iteration-count:infinite;
+	-webkit-animation-timing-function:linear;
+}
+
+@-webkit-keyframes loading {
+	from { -webkit-transform:rotate(0deg) translateZ(0); }
+	to { -webkit-transform:rotate(360deg) translateZ(0); }
+}
+
+#wrapper {
+    position: absolute;
+    z-index: 1;
+    top: 40px;
+    bottom: 50px;
+    left: -9999px;
+    width: 100%;
+    overflow: auto;
+}
+.pullDownLabel,.pullUpLabel{
+    z-index: 100;
+    width: 100%;
+    max-width: 640px;
+    min-width:320px;
+}
+.pullDownIcon{
+	background:none;
+}
+.project_list_a{
+	display: block;
+    margin: 10px 12px 0px;
+	border-radius:5px;
+    height: 90px;	
+}
+#pullDown .pullDownLabel,#pullUp .pullUpLabel{
+	line-height:41px;
+}
+#thelist {
+    min-width: 320px;
+    max-width: 640px;
+    margin: 0 auto;
+    padding-bottom: 18px;
+}
+/* 下载刷新补充 */
+ 
+/*  top开始 */
+#top_wrap{
+	background: #fff;
+	min-width:320px;
+	max-width:640px;
+	margin:0 auto;
+}
+.top{
+	width: 100%;
+	height: 38px;
+	line-height: 38px;
+	text-align: center;
+	font-size: 18px;
+	position:relative;
+	box-shadow: 1px 0px 3px #999;
+}
+/* top结束 */
+
+/* 项目筹审开始 */
+.infoCon{
+	display:block;
+	background:#fff;
+	margin-top:10px;
+	padding:10px;
+	color:#333;
+}
+.infoCon h2{
+	overflow: hidden;
+    text-overflow: ellipsis;
+    -moz-text-overflow: ellipsis;
+    -ms-text-overflow: ellipsis;
+    -o-text-overflow: ellipsis;
+    white-space: nowrap;
+}
+.infoCon span{
+	line-height:18px;
+}
+/* 项目筹审结束 */

@@ -1,0 +1,327 @@
+/*
+*
+*
+*资讯
+*
+*
+*/
+
+body{
+	min-width: 320px;
+	max-width: 640px;
+	margin: 0 auto;
+	background: #f3f3f3;
+}
+
+/*导航开始 */
+nav{
+	height: 44px;
+	/* padding: 0 30px; */
+	position: relative;
+	background: #fff;
+}
+.subNav{
+	margin: 0 auto;
+	height: 44px;
+	width: 80%;
+}
+.subNav li{
+	float: left;
+	line-height: 44px;
+	width: 33.33%;
+	text-align: center;
+}
+.subNav li a{
+	display:block;
+	color:#333;
+	font-size: 16px;
+}
+li.current a{
+	background: #f74a3d;
+	color: #fff;
+	z-index:11;
+}
+.user{
+	position: absolute;
+	right: 5px;
+	top: 11px;
+	width: 30px;
+	height: 30px;
+	background: url(../../../../file/h5/weixin/images/login.png) 0 0 no-repeat;
+	background-size: 20px 18px;
+}
+.used{
+	position:absolute;
+	right:5px;
+	top:11px;
+	width:30px;
+	height:30px;
+	background:url(../../../../file/h5/weixin/images/user.png) 0 0 no-repeat;
+	background-size:18px 18px;
+}
+/* 导航结束*/
+
+/* activity_wrap */
+.litNav{
+	height: 35px;
+	/* width: 80%;
+	margin: 0 auto; */
+	margin: 8px 0;
+	box-shadow: 0px 0px 4px #ccc;
+	-webkit-box-shadow: 0px 0px 4px #ccc;
+	-moz-box-shadow: 0px 0px 4px #ccc;
+	-o-box-shadow: 0px 0px 4px #ccc;
+	background: #f6f6f6;
+	border-top: 1px solid #fff;
+    border-bottom: 1px solid #fff;
+}
+.litNav li{
+	float: left;
+	width: 33.3%;
+	font-size: 15px;
+	text-align: center;
+	line-height: 35px;
+	/* background: url(../../../../file/h5/weixin/images/border_right.png) right center no-repeat; */
+}
+#title .choosed{
+	/* background:#fff url(../../../../file/h5/weixin/images/border_right.png) right center no-repeat; */
+	border-left:1px solid #eee;
+	box-shadow: 0px 0px 8px #ddd;
+	height:34px;
+	background:#fff;
+}
+.litNav li{
+	width: 20%;
+	font-size: 14px;
+	/* background: url(../../../../file/h5/weixin/images/border_right.png) left center no-repeat; */
+}
+.litNav li:first-child{
+	/* background-image: none; */
+}
+#title li a.change{
+	color: #f64a3c;
+	background: #fff;
+}
+.infoCon{
+	display:block;
+	margin: 10px 12px 0px;
+	border-radius: 5px;
+	background: #fff;
+	height: 90px;
+	color:#333;
+	overflow:hidden;
+}
+.text_info{
+	float: left;
+	padding: 15px 10px;
+	width: 56%;
+}
+.text_info h2{
+	font-size:16px;
+	font-weight: bold;
+	line-height: 22px;
+	margin-bottom: 5px;
+	overflow: hidden;
+	text-overflow: ellipsis;
+    -moz-text-overflow: ellipsis;
+    -ms-text-overflow: ellipsis;
+    -o-text-overflow: ellipsis;
+    white-space: nowrap;
+}
+.text_info p{
+	color: #666;
+	font-size: 12px;
+}
+.img_info{
+	/* width: 35%; */
+	float: right;
+	text-align: center;
+	padding: 6px;
+}
+.img_info img{
+	width: 106px;
+	height: 60px;
+}
+.img_info span{
+	display: block;
+	font-size: 12px;
+	color: #999;
+	text-align: right;
+    margin-top: 5px;
+}
+/* 固定条开始 */
+.fixed_bar{
+	background: url(../../../../file/h5/weixin/images/fixed_bg.png) 0 0 no-repeat;
+	background-size: 100% 45px;
+	box-shadow: 0px -1px 10px #ddd;
+	position: fixed;
+    bottom: 0;
+    left: 50%;
+    width: 100%;
+    min-width: 320px;
+    max-width: 640px;
+    transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+    z-index:11;
+}
+.fixed_logo{
+	width: 35px;
+	height: 35px;
+	background: url(../../../../file/h5/weixin/images/fixed_logo.png) 0 0 no-repeat;
+	background-size: 35px 35px;
+	float: left;
+	margin: 5px 8px;
+}
+.fixed_con{
+	padding-top: 3px;
+	float: left;
+}
+.fixed_con p{
+	font-size: 16px;
+	color: #333;
+	margin:0;
+}
+.fixed_con span{
+	font-size: 12px;
+	color: #666;
+}
+.load{
+	padding-right: 8px;
+	float: right;
+}
+.load a{
+	float:left;
+	width: 80px;
+	height: 26px;
+	line-height: 26px;
+	font-size: 12px;
+	border-radius: 13px;
+	background: #f74a3d;
+	color: #fff;
+	text-align: center;
+	margin-top:10px;
+}
+.load i{
+	display: inline-block;
+	width: 20px;
+	height: 35px;
+	background: url(../../../../file/h5/weixin/images/close.png) 5px 15px no-repeat;
+	background-size: 15px 15px;
+}
+/* 固定条结束 */
+a:hover{
+	color:#f64b3a;
+}
+
+/**
+ *
+ * Pull down styles
+ *
+ */
+#pullDown, #pullUp {
+	/* background:#fff;
+	height:40px;
+	line-height:40px;
+	padding:5px 10px;
+	margin:0 12px;
+	border-bottom:1px solid #ccc;
+	font-weight:bold;
+	font-size:14px; */
+	color:#888;
+	text-align:center;
+}
+#pullDown .pullDownIcon, #pullUp .pullUpIcon  {
+	display:block;
+	float:left;
+	/* width:40px;
+	height:40px; */
+	background:url(pull-icon@2x.png) 0 0 no-repeat;
+	-webkit-background-size:40px 80px;
+	background-size:40px 80px;
+	-webkit-transition-property:-webkit-transform;
+	-webkit-transition-duration:250ms;	
+}
+#pullDown .pullDownIcon {
+	-webkit-transform:rotate(0deg) translateZ(0);
+}
+#pullUp .pullUpIcon  {
+	-webkit-transform:rotate(-180deg) translateZ(0);
+}
+
+#pullDown.flip .pullDownIcon {
+	-webkit-transform:rotate(-180deg) translateZ(0);
+}
+
+#pullUp.flip .pullUpIcon {
+	-webkit-transform:rotate(0deg) translateZ(0);
+}
+
+#pullDown.loading .pullDownIcon, #pullUp.loading .pullUpIcon {
+	background-position:0 100%;
+	-webkit-transform:rotate(0deg) translateZ(0);
+	-webkit-transition-duration:0ms;
+	-webkit-animation-name:loading;
+	-webkit-animation-duration:2s;
+	-webkit-animation-iteration-count:infinite;
+	-webkit-animation-timing-function:linear;
+}
+
+@-webkit-keyframes loading {
+	from { -webkit-transform:rotate(0deg) translateZ(0); }
+	to { -webkit-transform:rotate(360deg) translateZ(0); }
+}
+
+#wrapper {
+    position: absolute;
+    z-index: 1;
+    top: 90px;
+    bottom: 45px;   /* 之前50px */
+    left: -9999px;
+    width: 100%;
+    overflow: auto;
+}
+.pullDownLabel{
+	position: fixed;
+    z-index: 100;
+    top: -28px;
+    /* width: 100%; */
+    max-width: 640px;
+    min-width:320px;
+    left:50%;
+    transform:translateX(-50%);
+    -moz-transform:translateX(-50%);
+    -ms-transform:translateX(-50%);
+    -o-transform:translateX(-50%);
+    /* display: none; */
+}
+.pullDownIcon{
+	background:none;
+}
+
+/* 内容限制宽 */
+.infoConWrap01{
+	min-width:320px;
+	max-width:640px;
+	margin:0 auto;
+	padding-bottom: 18px; /* 增加的内容  */
+}
+#title li a{
+	color:#333;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

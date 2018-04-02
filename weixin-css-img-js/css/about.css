@@ -1,0 +1,248 @@
+body {
+	font-size: 14px;
+	font-family: "Arial", "Microsoft YaHei", sans-serif;
+   	/* padding-right: 5px;
+	padding-left: 5px; */
+	margin-right: auto;
+	margin-left: auto;
+	overflow-x: hidden;
+}
+/* h5/css/style.css*/
+/* Links */
+a {
+  color: #0d3d88;
+  text-decoration: none;
+}
+a:hover {
+  color: #347aeb;
+}
+a:active, a:focus {
+  color: #6298f0;
+}
+a:visited {
+  color: #0d3d88;
+}
+
+  	/* Containers */
+.page-container {
+  /* padding: 0 15px; */
+  margin: 0 auto;
+  position: relative;
+  max-width: 1170px\0;
+}
+.page-container:before, .page-container:after {
+  content: " ";
+  display: table;
+}
+.page-container:after {
+  clear: both;
+}
+@media (min-width: 768px) {
+  .page-container {
+    max-width: 750px;
+  }
+}
+@media (min-width: 992px) {
+  .page-container {
+    max-width: 970px;
+  }
+}
+@media (min-width: 1200px) {
+  .page-container {
+    max-width: 1170px;
+  }
+}
+@media (max-width: 767px) {
+  .page-container {
+    /* padding: 0 10px; */
+  }
+}
+
+/* Panel */
+.panel, .article, .list {
+  color: #333333;
+  background-color: transparent;
+  border: solid #dddddd 1px;
+  border-radius: 3px;
+}
+.panel > .panel-heading, .list > header {
+	  border-bottom: solid #dddddd 1px;
+	  font-weight: inherit;
+	  font-size: inherit;
+	  background-color: #f5f5f5;
+	  color: #333333;
+	  background-image: -moz-linear-gradient(top, #fbfbfb 0%, #f2f2f2 100%);
+	  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #fbfbfb), color-stop(100%, #f2f2f2));
+	  background-image: -webkit-linear-gradient(top, #fbfbfb 0%, #f2f2f2 100%);
+	  background-image: -o-linear-gradient(top, #fbfbfb 0%, #f2f2f2 100%);
+	  background-image: linear-gradient(top, #fbfbfb 0%, #f2f2f2 100%);
+}
+/* style.css*/
+
+.page-header {
+	border: none;
+	padding: 0;
+	margin: 20px 0;
+}
+p>span {
+	font-weight: 700;
+}
+.panel > .panel-heading {
+	font-size: 19px;
+}
+h1{
+	font-size: 26px;
+}
+h4{
+	font-size: 14px;
+	text-align:center;
+}
+p{
+	text-indent: 2em;
+}
+.table{
+	margin: -10px 0 0;
+}
+.table>tbody>tr>th, .table>tbody>tr>td {
+	padding: 8px 0;
+}
+th{
+    min-width: 60px;
+}
+.table>tbody>tr:first-child>th,.table>tbody>tr:first-child>td{
+	border: none;
+}
+
+/*
+*
+*
+*关于爱就投
+*
+*/
+body{
+	color: #333;
+	max-width:640px;
+	min-width:320px;
+	margin:0 auto;
+	font-size:12px;
+}
+h2{
+	height: 40px;
+	line-height: 40px;
+	font-size:14px;
+	text-align: center;
+	font-weight: bold;
+}
+/* 顶部开始 */
+#top_wrap{
+	border-bottom: 10px solid #f3f3f3;
+}
+.top{
+	width: 100%;
+	min-width:320px;
+	max-width:640px;
+	height: 38px;
+	line-height: 38px;
+	text-align: center;
+	font-size: 16px;
+	background: #fff;
+    position: fixed;
+    top: 0;
+    z-index: 11;
+    border-bottom: 10px solid #f3f3f3;
+}
+.top_left{
+	width: 36px;
+	height: 36px;
+	background: url(../../../../file/h5/weixin/images/back.png) 13px no-repeat;
+	background-size: 10px 16px;
+	position:absolute;
+	left:0px;
+	top:1px;
+}
+/* 顶部结束 */
+.article-content p{
+	line-height:20px;
+	text-indent:2em;
+	color:#444;
+}
+.article-contetn p strong{
+	text-indent: 0em;
+}
+.article-content{
+	text-align:center;
+    padding: 0 12px;
+    margin-top: 49px;
+}
+.article-content img{
+	height:28px;
+}
+.article-content p{
+	text-align:left;
+	text-align:justify;
+	text-justify:inter-ideograph;
+}
+
+/* 壮苗计划说明 */
+#about-nav{
+	position:fixed;
+	top:35px;
+	display:none;
+	z-index:11;
+	width:100%;
+	border: 1px #EBEBEB solid;
+	max-width:640px;
+	margin:0 auto;
+}
+#about-nav a{
+	display:block;
+	color:#666;
+    font-weight: bold;
+    font-size:14px;
+    line-height:46px;
+    text-align:center;
+    background:#fff;
+    border-bottom: 1px #EBEBEB dashed;
+}
+#about-nav a.popCon{
+	color:#fff;
+	background:#f74a3d;
+}
+#about-nav a:last-child{
+	border:none;
+}
+.pop_nav{
+    width: 18px;
+    position: absolute;
+    top: 9px;
+    right: 12px;
+    z-index: 11;
+}
+.growSapling img{
+	width:100%;
+	float:left;
+}
+#share_mask{
+    width: 100%;
+    height: 100%;
+    background: url('../../../../file/tf/fintest/img/mask.png') repeat;
+    position: fixed;
+    bottom: 0;
+    left: 50%;
+    z-index: 10;
+    max-width: 640px;
+    transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+    display: none;
+}
+
+
+
+
+
+
+
+
+

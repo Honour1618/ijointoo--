@@ -1,0 +1,272 @@
+    html,body{
+            min-width: 320px;
+            max-width: 640px;
+            margin: 0 auto;
+            min-height: 100%;
+        }
+        html{
+            position: relative;
+        }
+        .clearfix:after{
+            display: block;
+            width: 0;
+            height:0;
+            content: "";
+            clear: both;
+        }
+
+        .user_acatar_btn{
+           opacity: 0;
+            width: 10rem;
+
+        }
+        .uploadIcon{
+            margin-left: -10rem;
+        }
+        .userAvatarData{
+            display: none;
+        }
+        body{
+
+            height: 100%;
+            box-sizing: border-box;
+        }
+        .page{
+            width: 100%;
+            height: 100%;
+            margin: 0 auto;
+
+        }
+        /*不够一屏的情况下，解决一屏显示背景*/
+        .page::before{
+            content:" ";
+            position:absolute;
+            left:0;
+            right:0;
+            top:0;
+            bottom:0;
+            background: #226995;/* 颜色自定义 */
+            z-index:-100;/* 突然想到个游戏，是男人就下100层。。。 */
+        }
+        .teac-title img{
+            width: 80%;
+            margin:18px auto -55px;
+            display:block;
+        }
+        .teac-msg-box{
+            margin: 0 auto 0;
+            background: rgba(7,193,192,0.8);
+            padding:52px 11px 27px 11px;
+            box-sizing: border-box;
+            min-height: 455px;
+            width: 80%;
+            z-index: 10;
+        }
+        .teac-msg-box>dt{
+        	padding:8px 0;
+        }
+        .teac-msg-box>dt>img{
+            margin-left: -19px;
+            width: 135px;
+            height: 36px;
+            vertical-align: top;
+        }
+        .teac-msg-box>dd{
+        margin-left:0;
+        }
+        .teac-msg-box>dd>input{
+            padding:0 7px;
+            display: block;
+            width:100%;
+            font-size:15px;
+            color:#333333;
+            height: 34px;
+            border:3px solid;
+            box-sizing:border-box;
+            border-radius:5px;
+        	-webkit-border-image: url(../images/teac-ipt-bg_03.png) 8 8 8 8 stretch stretch;
+        	-o-border-image: url(../images/teac-ipt-bg_03.png) 8 8 8 8 stretch stretch;
+        	border-image: url(../images/teac-ipt-bg_03.png) 8 8 8 8 stretch stretch; 
+            
+        }
+        .teac-msg-box>dd>.user_acatar_btn{
+            display: block;
+            width: 207px;
+            height: 120px;
+            margin: 12px auto -120px;
+            color: #666;
+        }
+
+
+    .user-img-show{
+       background: url("../images/addicon_03.png") no-repeat left 0 top 0;
+        background-size: 100% 100%;
+        min-height: 117px;
+        width: 204px;
+        margin: 0 auto;
+        overflow: hidden;
+        -webkit-border-radius: 5px;
+        -moz-border-radius: 5px;
+        border-radius: 5px;
+        border: 3px solid;
+        -webkit-border-image: url(../images/border-imgge_03.png) 7 7 7 7 stretch stretch;
+        -o-border-image: url(../images/border-imgge_03.png) 7 7 7 7 stretch stretch;
+        border-image: url(../images/border-imgge_03.png) 7 7 7 7 stretch stretch;
+
+    }
+        .user-img-show .item{
+            /*padding: 5px;*/
+            overflow: hidden;
+
+        }
+        .user-img-show img{
+            width: 100%;
+            min-height: 120px;
+        }
+        .user-img-show .item>img{
+            vertical-align: bottom;
+            border-radius:5px;
+        }
+        .sub-apply{
+            width: 200px;
+            height: 52px;
+            display: block;
+            border: none;
+            background: url("../images/teac-sub-btn-bg_11.png") no-repeat left 0 top 0;
+            background-size: 100% 100%;
+            outline: none;
+            /*margin: 27px auto 0;*/
+/*            position: absolute;
+            left: 50%;
+            margin-left: -100px;
+            bottom: 30px;*/
+            margin: 2rem auto;
+            animation:helpAnimate 0.5s infinite;
+            -webkit-animation:helpAnimate 0.5s infinite;
+/*            position: absolute;
+            left: 50%;
+            margin-left: -100px;
+            bottom: 40px;*/
+        }
+        .teac-title{
+
+        	width: 100%;
+            margin: 0 auto;
+
+        }
+        .boxBg{
+            position: fixed;
+            left: 0;
+            bottom: 0;
+            width: 100%;
+            z-index: -1;
+
+        }
+        .user_acatar_btn2{
+            width: 100px;
+            height: 30px;
+            margin-bottom: 0 !important;
+            color: #666;
+            display:none ;
+            opacity:0;
+
+        }
+
+        .iconUp{
+            width: 100px;
+            height: 30px;
+            display: none;
+            margin: -30px auto 0;
+            text-align: center !important;
+            display:blcok;
+            color:#ffffff;
+            
+        }
+
+
+        @keyframes helpAnimate
+        {
+            0% {
+                transform:rotate(2deg);
+                -ms-transform:rotate(2deg); 	/* IE 9 */
+                -moz-transform:rotate(2deg); 	/* Firefox */
+                -webkit-transform:rotate(2deg); /* Safari 和 Chrome */
+                -o-transform:rotate(2deg);
+            }
+            50%  {
+                transform:rotate(-2deg);
+                -ms-transform:rotate(-2deg); 	/* IE 9 */
+                -moz-transform:rotate(-2deg); 	/* Firefox */
+                -webkit-transform:rotate(-2deg); /* Safari 和 Chrome */
+                -o-transform:rotate(-2deg);
+            }
+            100%{
+                transform:rotate(2deg);
+                -ms-transform:rotate(2deg); 	/* IE 9 */
+                -moz-transform:rotate(2deg); 	/* Firefox */
+                -webkit-transform:rotate(2deg); /* Safari 和 Chrome */
+                -o-transform:rotate(2deg);
+            }
+        }
+
+        @-webkit-keyframes helpAnimate /* Safari and Chrome */
+        {
+            0% {
+                transform:rotate(2deg);
+                -ms-transform:rotate(2deg); 	/* IE 9 */
+                -moz-transform:rotate(2deg); 	/* Firefox */
+                -webkit-transform:rotate(2deg); /* Safari 和 Chrome */
+                -o-transform:rotate(2deg);
+            }
+            50%{
+                transform:rotate(-2deg);
+                -ms-transform:rotate(-2deg); 	/* IE 9 */
+                -moz-transform:rotate(-2deg); 	/* Firefox */
+                -webkit-transform:rotate(-2deg); /* Safari 和 Chrome */
+                -o-transform:rotate(-2deg);
+            }
+            100%{
+                transform:rotate(2deg);
+                -ms-transform:rotate(2deg); 	/* IE 9 */
+                -moz-transform:rotate(2deg); 	/* Firefox */
+                -webkit-transform:rotate(2deg); /* Safari 和 Chrome */
+                -o-transform:rotate(2deg);
+            }
+        }
+        
+   .alertShow {
+    width: 60%;
+    min-height: 60px;
+    max-width: 500px;
+    border: 1px solid #999;
+    border-radius: 5px;
+    background: #fff;
+    position: fixed;
+    top: 30%;
+    left: 50%;
+    transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+    text-align: center;
+    color: #f74a3d;
+    padding: 40px 10px 10px;
+    box-shadow: 0 0 10px #999;
+    -webkit-box-shadow: 0 0 10px #999;
+    -moz-box-shadow: 0 0 10px #999;
+    -ms-box-shadow: 0 0 10px #999;
+    -o-box-shadow: 0 0 10px #999;
+    z-index: 99;
+    display: none;
+}
+.common_mask {
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.4);
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 11;
+    display: none;
+}
